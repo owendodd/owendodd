@@ -1,0 +1,77 @@
+/*Type*/
+html {
+    overflow: hidden;
+    height: 100%;
+}
+body {
+  margin: 0;
+  padding: 1em;
+  font-family: 'LifeT-ReguRo1', serif;
+  font-size: 1.6vw;
+  text-align: left;
+  color: black;
+  line-height: 1.2;
+  height: 100%;
+  background-color: white;
+  overflow: auto;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+header {
+  position: fixed;
+  margin-top:-5px;
+  width: 100%
+}
+p {
+  margin: 0;
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+a {
+  color: black;
+  text-decoration: black;
+}
+a:hover {
+  text-shadow: 0px 0px 6px black;
+  z-index: 200;
+}
+.bg {
+  background-image: url(/assets/BG1.svg);
+  pointer-events: none;
+  height: 150vh;
+  width: 150vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter:blur(40px);
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+
+
+@media only screen and (max-device-width: 480px){
+.info {
+  width: 100%;
+}
+.bg {
+  background-image: url(/assets/BG2.svg);
+  pointer-events: none;
+  height: 120vh;
+  width: 130vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter:blur(30px);
+  background-size: 100% 100%;
+  z-index: 100;
+}
+}

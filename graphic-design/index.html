@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OD</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="/styles/_od_feed.css">
+    <link rel="stylesheet" type="text/css" href="/styles/MyFontsWebfontsKit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
+    <script src="/scripts/sss.js"></script>
+
+    <script>
+    jQuery(function($) {
+    $('.slider').sss();
+    });
+    </script>
+
+  </head>
+  <body>
+    <div>
+      <div class="bio info">
+      <div class="blocktext">
+        <p><a href="/">Information</a>, <a href="mailto:owen.dodd@gmail.com" target="_blank">Contact</a>
+      </div>
+      </div>
+
+      <div class="main">
+
+        {% for project in content %}
+      <div class="slider">
+        {% for image in project.images %}
+          <img src="{{ image.url }}" alt="{{ image.name }}">
+        {% endfor %}
+      </div>
+      <div class="caption">
+        {{ project.caption }}
+      </div>
+        {% endfor %}
+
+      </div>
+
+
+  </body>
+</html>
