@@ -8,7 +8,6 @@
 
 console.log("Circle Cursor jQuery plugin loaded");
 (function ( $ ) {
-
     $.fn.circursor = function( options ) {
 
         var options = $.extend({
@@ -37,5 +36,6 @@ console.log("Circle Cursor jQuery plugin loaded");
       });
 
     };
+
 
 }( jQuery ));
