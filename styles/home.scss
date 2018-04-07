@@ -1,0 +1,78 @@
+@mixin p($property, $val) {
+    -webkit-#{$property}: $val;
+    -moz-#{$property}: $val;
+    -ms-#{$property}: $val;
+    #{$property}: $val;
+}
+
+// General
+body {
+    margin: 20px;
+    color: black;
+    padding: 1em;
+    font-family: "LifeT-ReguRo1", serif;
+    font-size: 2.4vw;
+    line-height: 1.2em;
+    letter-spacing: -0.02rem;
+    background-color: #51461F;
+    padding: 0;
+    @include p(font-smoothing, antialiased);
+}
+
+h1 {
+  font-size: 1.8vw;
+  line-height: 1em;
+  margin: 0 0 0.2rem;
+  font-weight: normal;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+    transition: all 0.5s;
+    &:hover {
+      letter-spacing: 0.15rem;
+    }
+}
+
+p {
+  margin: 0;
+}
+
+// Layout
+
+section {
+  div {
+    margin-top: 5vh;
+    max-width: 72vw;
+  }
+}
+
+.bg {
+  width: 92vw;
+  height: 92vh;
+  position: fixed;
+  top: 4vh;
+  left: 4vw;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 5px 10px;
+  z-index: -100;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 4vh;
+  }
+  section {
+    div {
+    max-width: 100%;
+    }
+  }
+  h1 {
+    font-size: 2.5vh;
+  }
+}
+
