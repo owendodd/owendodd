@@ -7,24 +7,22 @@
 
 // General
 body {
-    margin: 20px;
+    margin: 15px;
     color: black;
-    padding: 1em;
     font-family: "LifeT-ReguRo1", serif;
     font-size: 2.4vw;
     line-height: 1.2em;
     letter-spacing: -0.02rem;
     background-color: #51461F;
-    padding: 0;
     @include p(font-smoothing, antialiased);
 }
 
 h1 {
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   line-height: 1em;
   margin: 0 0 0.2rem;
   font-weight: normal;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
