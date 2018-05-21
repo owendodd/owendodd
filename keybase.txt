@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/owendodd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://owendodd.com
+  * I am owendodd (https://keybase.io/owendodd) on keybase.
+  * I have a public key ASBOeIzj6dMa2whvZ4FbL8ZFOAD_5uSSppY_u-tRjVq0cAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204e788ce3e9d31adb086f67815b2fc6453800ffe6e492a6963fbbeb518d5ab4700a",
+      "host": "keybase.io",
+      "kid": "01204e788ce3e9d31adb086f67815b2fc6453800ffe6e492a6963fbbeb518d5ab4700a",
+      "uid": "32170cf596de54b737e8a52b6df27919",
+      "username": "owendodd"
+    },
+    "merkle_root": {
+      "ctime": 1526933541,
+      "hash": "657423a5d6f27b273279201250ea82dbbad1fc046421356a9f6b64cacce10b847552c25bc7efa8c7973197369f203088c0e568403fd7c55efbecd2bad0cd0f82",
+      "hash_meta": "b2c5041afad02b5ac093b8756b120b3e0023e2364cbfbc01208413838a24ef44",
+      "seqno": 2855833
+    },
+    "service": {
+      "entropy": "2Gecg4f685jNSxqM4eum6lRD",
+      "hostname": "owendodd.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.48"
+  },
+  "ctime": 1526933549,
+  "expire_in": 504576000,
+  "prev": "c3bea42e160e2d56e1264fe0e3852aef42f55e74ea9b3ac13412f6caacdfb1f0",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgTniM4+nTGtsIb2eBWy/GRTgA/+bkkqaWP7vrUY1atHAKp3BheWxvYWTESpcCB8Qgw76kLhYOLVbhJk/g44Uq70L1XnTqmzrBNBL2yqzfsfDEIH4+QLbA1kFIXuT2TWJaHvOxEZmHpeVm24oW5mmu9Cw8AgHCo3NpZ8RAdtXQMNZb5EgQNvsasYmR38Cmn0WSueSfKGjBQz1YAvXgFtlmdAm8A6NiwqjRjoYZIvuVKbKDCE4JUkVvYPsYBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEsnWepuYKDeL3GFvWjcaxxoN1VajjKzrCsKA4hPJMs7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/owendodd
+
+==================================================================
