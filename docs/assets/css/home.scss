@@ -1,0 +1,157 @@
+@mixin p($property, $val) {
+    -webkit-#{$property}: $val;
+    -moz-#{$property}: $val;
+    -ms-#{$property}: $val;
+    #{$property}: $val;
+}
+
+@import "webfonts";
+
+
+// General
+body {
+    margin: 20px;
+    color: black;
+    padding: 1em;
+    font-family: "LifeT-ReguRo1", serif;
+    font-size: 2.4vw;
+    line-height: 1.2em;
+    letter-spacing: -0.02rem;
+
+    padding: 0;
+    @include p(font-smoothing, antialiased);
+}
+
+h1 {
+  font-size: 1.4vw;
+  line-height: 1em;
+  margin: 0 0 0.2rem;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+a, li {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      letter-spacing: 0.15rem;
+    }
+}
+
+p {
+  margin: 0;
+}
+
+// Layout
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 15px;
+  left: 15px;
+  pointer-events: none;
+  p a {
+    text-decoration: none;
+    &:hover {
+      letter-spacing: -0.02rem;
+    }
+  }
+  p, li {
+    pointer-events: auto;
+  }
+  ul {
+    padding: 0;
+    margin: 0 0;
+    list-style: none;
+  }
+  div {
+    margin-top: 5vh;
+    max-width: 72vw;
+  }
+}
+
+.indicator {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+.hider {
+  @extend a ;
+  position: fixed;
+  cursor: pointer;
+  bottom: 15px;
+  left: 15px;
+  z-index: 100;
+}
+
+// Slideshow
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  .prev {
+    height: 100vh;
+    width: 50vw;
+    cursor: w-resize;
+  }
+  .next{
+    height: 100vh;
+    width: 50vw;
+    cursor: e-resize;
+  }
+}
+
+.slider {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: calc(100vh - 80px);
+  width: calc(100vw - 80px);
+  .slide {
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &.show {
+      display: flex;
+    }
+    img {
+      height: 100%;
+      margin: 10px;
+      &.sm {
+        height: 60%;
+        margin: 40px;
+      }
+    }
+  }
+  &.active {
+    display: flex;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 4vh;
+  }
+}
+
