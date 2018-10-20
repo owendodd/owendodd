@@ -1,0 +1,121 @@
+@mixin p($property, $val) {
+    -webkit-#{$property}: $val;
+    -moz-#{$property}: $val;
+    -ms-#{$property}: $val;
+    #{$property}: $val;
+}
+
+@import "webfonts";
+
+
+// General
+body {
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-family: "LifeT-ReguRo1", serif;
+    font-size: 22px;
+    line-height: 1.34em;
+    letter-spacing: -0.02rem;
+    padding: 0;
+    @include p(font-smoothing, antialiased);
+}
+
+h1 {
+  font-family: 'Life-Bol';
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: normal;
+  margin: 0 0 0.2rem;
+}
+
+h2 {
+  font-family: 'LifeSC-Reg';
+  font-size: 22px;
+  line-height: 1em;
+  margin: 0 0 0.2rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  text-transform: lowercase;
+  margin-top: 40px;
+  text-align: left;
+}
+
+a, li {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      letter-spacing: 0.15rem;
+    }
+}
+
+p {
+  margin: 0;
+  max-width: 30em;
+}
+
+
+// Layout
+
+header {
+  z-index: 100;
+  top: 0;
+  padding: 20px;
+  position: absolute;
+  height: calc(100vh - 40px);
+  p a {
+    text-decoration: none;
+    &:hover {
+      letter-spacing: -0.02rem;
+    }
+  }
+  p, li {
+    pointer-events: auto;
+    width: auto;
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+  ul {
+    padding: 0;
+    margin: 0 0;
+    list-style: none;
+  }
+  .toc {
+    text-align: center;
+  }
+  .contact {
+    position: absolute;
+    bottom: 15px;
+    p {
+      display: inline-block;
+      margin-right:40px; 
+    }
+  }
+}
+
+
+
+section {
+  margin: 20px;
+  &:first-of-type {
+    margin-top: calc(100vh + 100px);
+  }
+  img {
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+    background-color: blue;
+  }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  // body {
+  //   font-size: 4vh;
+  // }
+}
+
