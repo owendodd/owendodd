@@ -7,6 +7,8 @@
 
 @import "webfonts";
 
+$font-lg: 26px;
+$font-sm: 20px;
 
 // General
 body {
@@ -14,7 +16,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "LifeT-ReguRo1", serif;
-    font-size: 22px;
+    font-size: $font-sm;
     line-height: 1.34em;
     letter-spacing: -0.02rem;
     padding: 0;
@@ -25,20 +27,24 @@ body {
 }
 
 h1 {
-  font-family: 'Life-Bol';
-  font-size: 30px;
-  line-height: 1em;
+  font-family: 'Life-Reg';
+  font-size: $font-lg;
+  line-height: 1.3em;
   margin: 0;
   font-weight: normal;
+  b {
+    font-family: 'Life-Bol';
+    font-weight: normal;
+  }
 }
 
 h2 {
   font-family: 'LifeSC-Reg';
-  font-size: 22px;
+  font-size: $font-sm;
   line-height: 1em;
-  margin: 30px 0 0 0;
+  margin: 30px 0 5px 0;
   font-weight: normal;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.03rem;
   text-transform: lowercase;
   text-align: left;
 }
@@ -47,15 +53,15 @@ a, li {
     text-decoration: underline;
     color: black;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.3s;
     &:hover {
-      letter-spacing: 0.15rem;
+      opacity: 0.2;
     }
 }
 
 p {
   margin: 0;
-  max-width: 30em;
+  max-width: 36em;
 }
 
 .bg {
@@ -63,12 +69,11 @@ p {
   height: 92vh;
   position: fixed;
   top: 4vh;
-  left: 4vw;
+  right: 4vw;
   border: 3px solid black;
   border-radius: 50%;
   box-shadow: 5px 10px;
   z-index: -100;
-  background-color: #51461F;
 }
 
 
@@ -89,16 +94,14 @@ header {
   p, li {
     pointer-events: auto;
     width: auto;
-    font-size: 30px;
-    line-height: 1.2em;
+    font-size: $font-lg;
+    line-height: 1.3em;
+    max-width: 26em;
   }
   ul {
     padding: 0;
     margin: 0 0;
     list-style: none;
-  }
-  .toc {
-    text-align: center;
   }
   .contact {
     position: absolute;
@@ -108,6 +111,9 @@ header {
       margin-right:40px; 
     }
   }
+  // .links a {
+  //   display: block;
+  // }
 }
 
 
