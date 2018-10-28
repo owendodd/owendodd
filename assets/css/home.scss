@@ -10,11 +10,43 @@
 $font-lg: 26px;
 $font-sm: 20px;
 
+// Grid
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+.grid-1 {
+  grid-column: span 1;
+  display: inline;
+}
+.grid-2 {
+  grid-column: span 2;
+  display: inline;
+}
+.grid-3 {
+  grid-column: span 3;
+  display: inline;
+}
+
+.off-1 {
+  grid-column-start: 2;
+  display: inline;
+}
+.off-2 {
+  grid-column-start: 3;
+  display: inline;
+}
+.off-3 {
+  grid-column-start: 4;
+  display: inline;
+}
+
 // General
 body {
     color: black;
     padding: 0;
-    margin: 0;
+    margin: 20px;
     font-family: "LifeT-ReguRo1", serif;
     font-size: $font-sm;
     line-height: 1.34em;
@@ -39,18 +71,16 @@ h1 {
 }
 
 h2 {
-  font-family: 'LifeSC-Reg';
-  font-size: $font-sm;
+  font-family: 'Theinhardt';
+  font-size: 16px;
   line-height: 1em;
-  margin: 30px 0 5px 0;
+  margin: 10px 0 5px 0;
   font-weight: normal;
-  letter-spacing: 0.03rem;
-  text-transform: lowercase;
   text-align: left;
 }
 
 a, li {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     cursor: pointer;
     transition: all 0.3s;
@@ -80,40 +110,11 @@ p {
 // Layout
 
 header {
-  z-index: 100;
-  top: 0;
-  padding: 20px;
-  position: absolute;
-  height: calc(100vh - 40px);
-  p a {
-    text-decoration: none;
-    &:hover {
-      letter-spacing: -0.02rem;
-    }
-  }
-  p, li {
-    pointer-events: auto;
-    width: auto;
-    font-size: $font-lg;
-    line-height: 1.3em;
-    max-width: 26em;
-  }
-  ul {
-    padding: 0;
-    margin: 0 0;
-    list-style: none;
-  }
-  .contact {
-    position: absolute;
-    bottom: 15px;
-    p {
-      display: inline-block;
-      margin-right:40px; 
-    }
-  }
-  // .links a {
-  //   display: block;
-  // }
+  margin: 0 0 20px;
+}
+
+.toc {
+  margin: 40px 0 0;
 }
 
 
