@@ -1,68 +1,35 @@
 @mixin p($property, $val) {
-    -webkit-#{$property}: $val;
-    -moz-#{$property}: $val;
-    -ms-#{$property}: $val;
-    #{$property}: $val;
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
 }
 
 @import "webfonts";
-
 $font-lg: 26px;
 $font-sm: 20px;
-
-// Grid
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-}
-.grid-1 {
-  grid-column: span 1;
-  display: inline;
-}
-.grid-2 {
-  grid-column: span 2;
-  display: inline;
-}
-.grid-3 {
-  grid-column: span 3;
-  display: inline;
-}
-
-.off-1 {
-  grid-column-start: 2;
-  display: inline;
-}
-.off-2 {
-  grid-column-start: 3;
-  display: inline;
-}
-.off-3 {
-  grid-column-start: 4;
-  display: inline;
-}
-
 // General
 body {
-    color: black;
-    padding: 0;
-    margin: 20px;
-    font-family: "LifeT-ReguRo1", serif;
-    font-size: $font-sm;
-    line-height: 1.34em;
-    letter-spacing: -0.02rem;
-    padding: 0;
-    @include p(font-smoothing, antialiased);
-    &.home {
-      background-color: #51461F;
-    }
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: "LifeT-ReguRo1", serif;
+  font-size: $font-sm;
+  line-height: 1.34em;
+  letter-spacing: -0.02rem;
+  padding: 0;
+  @include p(font-smoothing, antialiased);
+  &.home {
+    background-color: #51461F;
+  }
 }
 
 h1 {
   font-family: 'Life-Reg';
   font-size: $font-lg;
   line-height: 1.3em;
-  margin: 0;
+  max-width: 26em;
+  margin: 0 0 5px;
   font-weight: normal;
   b {
     font-family: 'Life-Bol';
@@ -73,56 +40,51 @@ h1 {
 h2 {
   font-family: 'Theinhardt';
   font-size: 16px;
+  margin: 30px 0 5px;
   line-height: 1em;
-  margin: 10px 0 5px 0;
-  font-weight: normal;
+  font-weight: normal; // letter-spacing: 0.03rem;
+  // text-transform: lowercase;
   text-align: left;
 }
 
-a, li {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    transition: all 0.3s;
-    &:hover {
-      opacity: 0.2;
-    }
+a,
+li {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.2;
+  }
 }
 
 p {
-  margin: 0;
+  margin: 0 0 10px;
   max-width: 36em;
 }
 
-.bg {
-  width: 92vw;
-  height: 92vh;
-  position: fixed;
-  top: 4vh;
-  right: 4vw;
-  border: 3px solid black;
-  border-radius: 50%;
-  box-shadow: 5px 10px;
-  z-index: -100;
-}
-
-
 // Layout
-
 header {
-  margin: 0 0 20px;
+  z-index: 100;
+  top: 0;
+  margin: 35px 40px 40px;
+  position: absolute;
+  height: calc(100vh - 75px);
 }
 
-.toc {
-  margin: 40px 0 0;
+.contact {
+  position: absolute;
+  bottom: 0;
+  h1 {
+    display: inline-block;
+    margin: 0 40px 0 0;
+  }
 }
-
-
 
 section {
-  margin: 20px;
+  margin: 120px 30px 0;
   &:first-of-type {
-    margin-top: calc(100vh + 100px);
+    margin-top: calc(100vh + 120px);
   }
   img {
     margin: auto;
@@ -132,12 +94,8 @@ section {
   }
 }
 
-
-
-
 @media screen and (max-width: 800px) {
   // body {
   //   font-size: 4vh;
   // }
 }
-
