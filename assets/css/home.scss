@@ -75,10 +75,11 @@ header {
 .contact {
   position: absolute;
   bottom: 0;
-  h1 {
-    display: inline-block;
-    margin: 0 40px 0 0;
-  }
+}
+
+.inline>h1 {
+  display: inline-block;
+  margin: 0 40px 0 0;
 }
 
 section {
@@ -99,3 +100,16 @@ section {
   //   font-size: 4vh;
   // }
 }
+
+.bg {
+  width: 92vw;
+  height: 92vh;
+  position: fixed;
+  top: 4vh;
+  right: 4vw;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 5px 10px;
+  z-index: -100;
+}
+
