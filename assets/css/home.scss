@@ -28,10 +28,11 @@ body {
 h1 {
   font-family: 'Life-Reg', serif;
   font-size: $font-lg;
-  line-height: 1.3em;
+  line-height: 1.2em;
+  margin: 0 10px 0 0; 
+  display: inline-block;
   width: auto;
   max-width: 26em;
-  margin: 0;
   font-weight: normal;
   b {
     font-family: 'Life-Bol', serif;
@@ -42,7 +43,8 @@ h1 {
 h2 {
   font-family: 'Theinhardt';
   font-size: $font-sm;
-  margin: 30px 0 5px;
+  display: inline-block;
+  margin: 0 5px 0 15px;
   letter-spacing: 0.02em;
   line-height: 1em;
   font-weight: normal; // letter-spacing: 0.03rem;
@@ -69,14 +71,12 @@ p {
 // Layout
 header {
   z-index: 100;
-  height: 100vh;
+  width: calc( 100vw - 40px);
+  height: calc( 100vh - 40px);
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  div {
-    margin: 30px;
-  }
-  
 }
 
 .contact {
@@ -104,12 +104,9 @@ section {
 }
 
 .bg {
-  width: 92vw;
-  height: 92vh;
-  position: fixed;
-  top: 4vh;
-  right: 4vw;
+  flex-grow: 1;
   border: 3px solid black;
+  margin: 20px 0 0;
   border-radius: 50%;
   box-shadow: 5px 10px 2px;
   z-index: -100;
