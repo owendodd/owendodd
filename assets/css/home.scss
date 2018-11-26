@@ -30,7 +30,6 @@ h1 {
   font-size: $font-lg;
   line-height: 1.2em;
   margin: 0 10px 0 0; 
-  display: inline-block;
   width: auto;
   max-width: 26em;
   font-weight: normal;
@@ -43,8 +42,7 @@ h1 {
 h2 {
   font-family: 'Theinhardt';
   font-size: $font-sm;
-  display: inline-block;
-  margin: 0 5px 0 15px;
+  margin: 25px 0 5px;
   letter-spacing: 0.02em;
   line-height: 1em;
   font-weight: normal; // letter-spacing: 0.03rem;
