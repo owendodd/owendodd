@@ -6,41 +6,44 @@
 }
 
 @import "webfonts";
-$font-lg: 26px;
-$font-sm: 20px;
+$font-lg: 28px;
+$font-md: 20px;
+$font-sm: 16px;
 // General
 body {
   color: black;
   padding: 0;
   margin: 0;
   font-family: "LifeT-ReguRo1", serif;
-  font-size: $font-sm;
+  font-size: $font-md;
   line-height: 1.34em;
   letter-spacing: -0.02rem;
   padding: 0;
   @include p(font-smoothing, antialiased);
   &.home {
-    background-color: #51461F;
+    background-color: #25301B;
   }
 }
 
 h1 {
-  font-family: 'Life-Reg';
+  font-family: 'Life-Reg', serif;
   font-size: $font-lg;
   line-height: 1.3em;
+  width: auto;
   max-width: 26em;
-  margin: 0 0 5px;
+  margin: 0;
   font-weight: normal;
   b {
-    font-family: 'Life-Bol';
+    font-family: 'Life-Bol', serif;
     font-weight: normal;
   }
 }
 
 h2 {
   font-family: 'Theinhardt';
-  font-size: 16px;
+  font-size: $font-sm;
   margin: 30px 0 5px;
+  letter-spacing: 0.02em;
   line-height: 1em;
   font-weight: normal; // letter-spacing: 0.03rem;
   // text-transform: lowercase;
@@ -66,20 +69,19 @@ p {
 // Layout
 header {
   z-index: 100;
-  top: 0;
-  margin: 35px 40px 40px;
-  position: absolute;
-  height: calc(100vh - 75px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  div {
+    margin: 30px;
+  }
+  
 }
 
 .contact {
   position: absolute;
   bottom: 0;
-}
-
-.inline>h1 {
-  display: inline-block;
-  margin: 0 40px 0 0;
 }
 
 section {
@@ -109,7 +111,10 @@ section {
   right: 4vw;
   border: 3px solid black;
   border-radius: 50%;
-  box-shadow: 5px 10px;
+  box-shadow: 5px 10px 2px;
   z-index: -100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
