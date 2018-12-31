@@ -8,7 +8,7 @@
 @import "webfonts";
 $font-lg: 28px;
 $font-md: 20px;
-$font-sm: 16px;
+$font-sm: 18px;
 // General
 body {
   color: black;
@@ -29,7 +29,7 @@ h1 {
   font-family: 'Life-Reg', serif;
   font-size: $font-lg;
   line-height: 1.2em;
-  margin: 0 10px 0 0; 
+  margin: 0 10px 0 0;
   width: auto;
   max-width: 26em;
   font-weight: normal;
@@ -42,8 +42,7 @@ h1 {
 h2 {
   font-family: 'Theinhardt';
   font-size: $font-sm;
-  margin: 25px 0 5px;
-  letter-spacing: 0.02em;
+  margin: 25px 0 5px; // letter-spacing: 0.02em;
   line-height: 1em;
   font-weight: normal; // letter-spacing: 0.03rem;
   // text-transform: lowercase;
@@ -69,9 +68,9 @@ p {
 // Layout
 header {
   z-index: 100;
-  width: calc( 100vw - 40px);
-  height: calc( 100vh - 40px);
-  margin: 20px;
+  width: calc( 100vw - 60px);
+  height: calc( 100vh - 60px);
+  margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,14 +83,16 @@ header {
 
 section {
   margin: 120px 30px 0;
-  &:first-of-type {
-    margin-top: calc(100vh + 120px);
-  }
-  img {
-    margin: auto;
-    height: 70vh;
+  .slider {
     width: 100%;
-    background-color: blue;
+    text-align: center;
+    img {
+      margin: auto;
+      height: 70vh;
+      max-height: 1000px;
+      width: auto;
+      margin:20px auto 40px;
+    }
   }
 }
 
@@ -112,4 +113,3 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
