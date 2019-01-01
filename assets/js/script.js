@@ -43,3 +43,28 @@ $('.hider').click(function () {
   $('header').toggle();
   $('.hider').text(text == "Hide info" ? "Show info" : "Hide info")
 });
+
+
+
+$(window).scroll(function() {    
+  var scroll     = $(window).scrollTop();
+      controller = $(".menu").children("h1");
+
+  if (scroll >= 10) {
+    $("header").addClass("fade");
+    controller.addClass("open");
+    controller.removeClass("close");
+  } else {
+    $("header").removeClass("fade");
+    controller.removeClass("open close");
+  }
+});
+
+$('.menu').click(function() {
+  var controller = $(".menu").children("h1");
+  
+  $("header").toggleClass("fade");
+  controller.toggleClass("open");
+  controller.toggleClass("close");
+  
+});
