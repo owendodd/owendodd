@@ -6,7 +6,7 @@
 }
 
 @import "webfonts";
-$font-lg: 24px;
+$font-lg: 30px;
 $font-md: 20px;
 $font-sm: 16px;
 // General
@@ -59,18 +59,17 @@ li {
 }
 
 p {
-  margin: 0 0 10px;
-  max-width: 40em;
+  margin: 10px 0;
+  max-width: 32em;
 }
 
 // Layout
 header {
   z-index: 1000;
   width: calc( 100vw - 120px);
-  height: calc( 100vh - 120px);
-  padding: 55px 60px 60px 60px;
+  min-height: calc( 100vh - 120px);
+  padding: 55px 60px;
   display: flex;
-  color: white;
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
@@ -82,17 +81,13 @@ header {
     pointer-events: none;
     @include p(transition, all 200ms ease);
   }
-  a {
-    color: white;
-  }
 }
 
-h1.name {
-  margin: 0;
+p.contact {
+  max-width: 100%;
 }
-
 a.contact {
-  margin: 0 40px 0 0;
+  margin: 0 0 0 30px;
   width: 100%;
 }
 
@@ -182,7 +177,7 @@ section {
 
 .bg {
   position: fixed;
-  background-color: #e8dcbf;
+  background-color: #faf1e4;
   width: calc(100vw - 20px);
   height: calc(100vh - 20px); // border: 1px solid black;
   border-radius: 8vh;
