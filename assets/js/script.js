@@ -42,7 +42,7 @@ $('.prev').click(function () {
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  controller = $(".menu").children("h1");
+  controller = $(".menu").children("h2");
 
   if (scroll >= 10) {
     $("header").addClass("fade");
@@ -55,7 +55,7 @@ $(window).scroll(function () {
 });
 
 $('.menu').click(function () {
-  var controller = $(".menu").children("h1");
+  var controller = $(".menu").children("h2");
 
   $("header").toggleClass("fade");
   controller.toggleClass("open");
