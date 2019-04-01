@@ -9,6 +9,7 @@
 $font-lg: 28px;
 $font-md: 20px;
 $font-sm: 17px;
+$font-xs: 14px;
 
 // General
 body {
@@ -38,10 +39,6 @@ h1 {
   }
 }
 
-h2 {
-  @extend %h2;
-}
-
 %h2 {
   font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
   font-size: $font-sm;
@@ -50,6 +47,10 @@ h2 {
   letter-spacing: 0.015em;
   font-weight: normal;
   text-align: left;
+}
+
+h2 {
+  @extend %h2;
 }
 
 a,
@@ -67,6 +68,15 @@ p {
   margin: 10px 0;
   max-width: 36em;
 }
+
+.caption {
+  @extend %h2;
+  font-size: $font-xs;
+  margin: 10px 0 40px;
+  text-align: right;
+  color: gray;
+}
+
 
 // Layout
 header {
@@ -139,54 +149,8 @@ section {
   &:last-of-type {
     margin-bottom: 40px;
   }
-  .slider {
+  img {
     width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 20px 0 40px;
-    display: block;
-    position: relative;
-    .controls {
-      position: absolute;
-      z-index: 10;
-      width: 100%;
-      top: 0px;
-      bottom: 0px;
-      display: flex;
-      align-self: stretch;
-      .prev {
-        height: 100%;
-        width: 50%;
-        cursor: w-resize;
-      }
-      .next {
-        height: 100%;
-        width: 50%;
-        cursor: e-resize;
-      }
-    }
-    .slide {
-      display: none;
-      &.show {
-        display: block;
-      }
-      img {
-        margin: auto;
-        display: block;
-        height: 70vh;
-        max-height: 1000px;
-        width: auto;
-        margin: 0 auto 10px;
-      }
-      .info {
-        display: flex;
-        justify-content: center;
-        h2 {
-          text-align: center;
-          margin: 0 10px;
-        }
-      }
-    }
   }
   .date-left {
     @extend %h2;
@@ -197,6 +161,7 @@ section {
     padding-right: 30px;
   }
 }
+
 
 @media screen and (max-width: 800px) {
   // body {
