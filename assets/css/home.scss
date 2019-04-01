@@ -75,7 +75,7 @@ p {
   @extend %h2;
   font-size: $font-xs;
   margin: 10px 0 40px;
-  text-align: right;
+  // text-align: right;
   color: gray;
 }
 
@@ -191,12 +191,22 @@ section {
     margin-bottom: 0;
   }
 
-  h2, .date-left, .date-right {
+  h2{
     font-size: $mobile-font-sm !important;
   }
 
+  section .date-left {
+    font-size: $mobile-font-sm !important;
+    padding-left: 15px;
+  }
+
+  section .date-right {
+    font-size: $mobile-font-sm !important;
+    padding-right: 15px;
+  }
+
   .caption {
-    font-size: $mobile-font-xs;
+    font-size: $mobile-font-xs !important;
   }
 
 
