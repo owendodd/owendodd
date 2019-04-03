@@ -44,7 +44,7 @@ h1 {
   font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
   font-size: $font-sm;
   margin: 25px 0 5px;
-  line-height: 1em;
+  line-height: 1.25em;
   letter-spacing: 0.015em;
   font-weight: normal;
   text-align: left;
@@ -208,7 +208,6 @@ section {
   .caption {
     font-size: $mobile-font-xs !important;
   }
-
 
   header {
     padding: 15px 20px;
