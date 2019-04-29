@@ -156,16 +156,15 @@ header {
 
 // Layout
 section {
-  margin: 0px 40px 30px;
-  padding-top: 30px;
+  padding: 0 40px 80px;
   position: relative;
 
   &.first {
-    margin-top: 100vh;
+    margin-top: 100vh !important;
   }
 
-  &:last-of-type {
-    margin-bottom: 40px;
+  &:first-of-type {
+    margin-top: 40px;
   }
 
   .img-wrapper {
@@ -202,6 +201,14 @@ section {
 
     }
   }
+}
+
+.grey {
+  background-color: #f8f8f8;
+  h2{
+    margin: 0;
+  }
+
 }
 
 
@@ -247,7 +254,7 @@ section {
   }
 
   section {
-    margin: 60px 20px 0;
+    padding: 60px 20px 0;
   }
 
 

@@ -31,31 +31,33 @@
     <div class="img-wrapper header">
       <img src="/design/palette/assets/palette header.png" alt="Palette" />
     </div>
-
-    <p>
-      The Artsy City Guide was created to enable our user-base to easily discover and visit art in the physical world.
-      The digital experience allows users to follow artists, galleries and museums for updates on new shows, and to
-      navigate to these shows in our 6 launch cities. The product was built as part of an on-going partnership with BMW
-      and was integrated into our existing iOS app.
-    </p>
   </section>
 
 
 
   <section>
     <h2>Background</h2>
-    <p>The Artsy iOS app has existed since 2015 as a tool for art enthusiasts to browse and save artworks, follow
-      artists, browse fairs, and explore gallery and musuem shows. The app experience was ultimately aimed at enabling
-      collectors to purchase works of art via conversations with galleries and by bidding in auctions.</p>
+    <p>
+      Over the past 3 years, the Artsy product team has taken various attempts at developing a cohesive design system to
+      enable quicker and more consistent iteration across our products. Without a consistent approach, these initiatives
+      have been limited in scope to specific product areas and have
+      failed to gain traction within the organization.
+    </p>
+    <p> Working without dedicated design systems resources, we knew we must focus on creating a system that could be
+      developed in a distributed manner and whose work could be
+      incorporated into existing product teams work as much as possible. </p>
   </section>
 
   <section>
     <h2>Systems audit</h2>
-    <p>TK on visual components</p>
+    <p>Assessing our existing implementation of common UI and UX patterns revealed a high level of inconsistency in both
+      the design treatment and implementation approach to functionally similar components.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette visual audit.png" alt="Palette" />
     </div>
-    <p>TK on visual state of storybooks</p>
+    <p>As our codebase moved more and more into React, our usage of components continued to be team specific, and lacked
+      a cohesive strategy. These divergent approachs resulted in a large amount of overhead in developing new
+      experiences and iterating on current products.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette storybooks audit.png" alt="Palette" />
     </div>
@@ -63,11 +65,16 @@
 
   <section>
     <h2>Designing process</h2>
-    <p>Tk on working group, distributed workflows etc</p>
+    <p>With the goal of creating a system that was easily consumable by a variety of teams working both on design and
+      engineering, we focused our attention on first articulating a lightweight and easily replicable process for any
+      potential contributors. The result of this was the formation of a small task force, meeting on a biweekly basis,
+      and robust documentation for all aspects of the design systems development process. </p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette meeting.png" alt="Palette" />
     </div>
-    <p>Tk on process documentation</p>
+    <p>Our documentation was created to ensure a consistent style and framework for all additions to our design system.
+      This was especially important for our team as both the engineering and design team scaled without dedicated
+      resources focused on the health and continued application of these systems.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette component process.png" alt="Palette" />
     </div>
@@ -75,7 +82,11 @@
 
   <section>
     <h2>System heirarchy</h2>
-    <p>TK on tokens, elements, components, utilities</p>
+    <p>The most fundimental problem for our task force to address was the question of what should be included in a
+      cohesive design system. Creating a hierarchical vocabularly allowed us to assess all potential additions to the
+      code base based on their specificity of application and their scalability accross our product experiences. All
+      additions to this system should be usefull across these products and should work in a wide range contexts and for
+      a variety of users.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette heirarchy.png" alt="Palette" />
     </div>
