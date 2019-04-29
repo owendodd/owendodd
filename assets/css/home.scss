@@ -73,7 +73,7 @@ li {
 }
 
 p {
-  margin: 10px 0;
+  margin: 10px 0 20px;
   max-width: 36em;
 }
 
@@ -205,6 +205,9 @@ section {
 
 .grey {
   background-color: #f8f8f8;
+  &:last-of-type {
+    padding-bottom: 30px;
+  }
   h2{
     margin: 0;
   }

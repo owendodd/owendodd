@@ -38,7 +38,7 @@
   <section>
     <h2>Background</h2>
     <p>
-      Over the past 3 years, the Artsy product team has taken various attempts at developing a cohesive design system to
+      Over the past 3 years, the Artsy design team has taken various attempts at developing a cohesive design system to
       enable quicker and more consistent iteration across our products. Without a consistent approach, these initiatives
       have been limited in scope to specific product areas and have
       failed to gain traction within the organization.
@@ -51,7 +51,7 @@
   <section>
     <h2>Systems audit</h2>
     <p>Assessing our existing implementation of common UI and UX patterns revealed a high level of inconsistency in both
-      the design treatment and implementation approach to functionally similar components.</p>
+      the design treatment and technical implementation of functionally similar components.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette visual audit.png" alt="Palette" />
     </div>
@@ -82,10 +82,10 @@
 
   <section>
     <h2>System heirarchy</h2>
-    <p>The most fundimental problem for our task force to address was the question of what should be included in a
+    <p>The most fundamental problem for our task force to address was the question of what should be included in a
       cohesive design system. Creating a hierarchical vocabularly allowed us to assess all potential additions to the
-      code base based on their specificity of application and their scalability accross our product experiences. All
-      additions to this system should be usefull across these products and should work in a wide range contexts and for
+      Palette code base based on their specificity of application and their scalability accross our product experiences. All
+      additions to this system should be useful across a many of our products, working in a wide range contexts and for
       a variety of users.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette heirarchy.png" alt="Palette" />
@@ -94,26 +94,35 @@
   </section>
 
   <section>
-    <h2>Components</h2>
-    <p>TK on typography, starting with primitives, building useage into naming</p>
+    <h2>Components: typography</h2>
+    <p>After an inital round of standardization of our type sizes and consolidation of their implementation we began developing an additional layer of typographic variables. The semantic naming of these variable created more clarity in how they should be applied. Additionally, these variables incorporated responsive logic allowing us to more easily scale type relationships across our breakpoints.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette typography docs.png" alt="Palette" />
     </div>
-    <p>TK on testing typography</p>
+    <p>Throughout this process, it was cruicial to continually test these variables accross our key product surfaces to ensure its functionality.</p>
     <div class="img-wrapper">
       <div class="img-wrapper">
         <img src="/design/palette/assets/palette typography tests.png" alt="Palette" />
       </div>
     </div>
-    <p>TK on quick forms </p>
+  </section>
+  <section>
+    <h2>Components: quick inputs</h2>
+    <p>Our quick edit input were created to capture information in contexts where experiences must be as lightweight as possible. Used prominitely in our log in and sign up forms, these elements are meant to be as condensed as possible while retaining their clairity and functionality.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette quick input.png" alt="Palette" />
     </div>
-    <p>TK on modals</p>
+  </section>
+  <section>
+    <h2>Components: modals</h2>
+    <p>Modals are used across our platform for quick actions and to surface important contextual information. The new modal compontent in Palette was created with two size variations, and a number of standardized treatment options for CTAs, forms, titles and other commonly used UI.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette heirarchy.png" alt="Palette" />
     </div>
-    <p>TK on evolving bar charts</p>
+  </section>
+  <section>
+    <h2>Components: data visualization</h2>
+    <p>An initial bar chart component was initially created when we began surfacing data to users both on the front end of the site and in our partner-facing CMS. Soon after, additional visualization options were added to support a wider variety of data types.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette data visualization.png" alt="Palette" />
     </div>
@@ -121,7 +130,7 @@
 
   <section>
     <h2>Moving forward</h2>
-    <p>TK on conclusion</p>
+    <p>As our design system is increasingly adopted across our product areas, we have continued to emphasis the importance of documentation of usage, and guidelines, creating a centralized, structured home for this work to live. This work will continue to evolve and be refined as we increase useage and find the boundries of our current systems.</p>
     <div class="img-wrapper">
       <img src="/design/palette/assets/palette banner.png" alt="Palette" />
     </div>
