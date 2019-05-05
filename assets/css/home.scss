@@ -60,9 +60,8 @@ h2 {
 }
 
 
-a,
-li {
-  text-decoration: none;
+a {
+  text-decoration: underline;
   color: black;
   cursor: pointer;
   transition: all 0.3s;
@@ -156,7 +155,7 @@ header {
 
 // Layout
 section {
-  padding: 0 40px 80px;
+  padding: 20px 40px 80px;
   position: relative;
 
   &.first {
