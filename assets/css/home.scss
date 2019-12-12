@@ -172,10 +172,16 @@ section {
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 60px 0;
+    -ms-overflow-style: none;
 
     img, video {
       width: 100%;
     }
+  }
+
+  .img-wrapper::-webkit-scrollbar {
+    display: none;
+    
   }
 
   .date-left {
