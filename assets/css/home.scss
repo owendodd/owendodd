@@ -7,8 +7,8 @@
 
 @import "webfonts";
 $font-lg: 26px;
-$font-md: 20px;
-$font-sm: 17px;
+$font-md: 16px;
+$font-sm: 16px;
 $font-xs: 14px;
 
 // General
@@ -16,7 +16,7 @@ body {
   color: black;
   padding: 0;
   margin: 0;
-  font-family: "LifeT-ReguRo1", serif;
+  font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
   font-size: $font-md;
   line-height: 1.5em;
   padding: 0;
@@ -27,16 +27,13 @@ body {
 }
 
 h1 {
-  font-family: 'Life-Reg', serif;
-  font-size: $font-lg;
+  font-size: $font-md;
   line-height: 1.25em;
   margin: 4px 10px 10px 0;
   max-width: 26em;
   font-weight: normal;
-
-  b {
-    font-family: 'Life-Bol', 'Times New Roman', Times, serif;
-    font-weight: normal;
+  .location {
+    padding-left: 20px;
   }
 }
 
@@ -92,7 +89,7 @@ header {
   min-height: calc(50vh - 60px);
   background-color: #64805b;
   color: #000;
-  padding: 30px 40px;
+  padding: 5px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,11 +104,11 @@ header {
     @include p(transition, all 200ms ease);
   }
 
-  .name {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 40px 5px 0;
-  }
+  // .name {
+  //   display: inline-block;
+  //   vertical-align: top;
+  //   margin: 0 40px 5px 0;
+  // }
 
   .bio {
     display: inline-block;
@@ -121,14 +118,14 @@ header {
 
 .menu {
   position: fixed;
-  top: 30px;
+  top: 5px;
   right: 40px;
   z-index: 2000;
   text-align: right;
   cursor: pointer;
 
   h2 {
-    margin: 15px 0 0;
+    margin: 4px 0 0;
   }
 
   h2.open::after {
