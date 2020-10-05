@@ -40,25 +40,25 @@ $('.prev').click(function () {
 
 
 
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
-  controller = $(".menu").children("h2");
+// $(window).scroll(function () {
+//   var scroll = $(window).scrollTop();
+//   controller = $(".menu").children("h2");
 
-  if (scroll >= 10) {
-    $("header").addClass("fade");
-    controller.addClass("open");
-    controller.removeClass("close");
-  } else {
-    $("header").removeClass("fade");
-    controller.removeClass("open close");
-  }
-});
+//   if (scroll >= 10) {
+//     $("header").addClass("fade");
+//     controller.addClass("open");
+//     controller.removeClass("close");
+//   } else {
+//     $("header").removeClass("fade");
+//     controller.removeClass("open close");
+//   }
+// });
 
-$('.menu').click(function () {
-  var controller = $(".menu").children("h2");
+// $('.menu').click(function () {
+//   var controller = $(".menu").children("h2");
 
-  $("header").toggleClass("fade");
-  controller.toggleClass("open");
-  controller.toggleClass("close");
+//   $("header").toggleClass("fade");
+//   controller.toggleClass("open");
+//   controller.toggleClass("close");
 
-});
+// });

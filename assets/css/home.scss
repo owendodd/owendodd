@@ -16,9 +16,9 @@ body {
   color: black;
   padding: 0;
   margin: 0;
-  font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
+  font-family: 'Theinhardt', Arial, Helvetica, sans-serif;
   font-size: $font-md;
-  line-height: 1.5em;
+  line-height: 1.4em;
   padding: 0;
   letter-spacing: 0.015em;
   width: 100%;
@@ -28,7 +28,6 @@ body {
 
 h1 {
   font-size: $font-md;
-  line-height: 1.25em;
   margin: 4px 10px 10px 0;
   max-width: 26em;
   font-weight: normal;
@@ -38,10 +37,9 @@ h1 {
 }
 
 %h2 {
-  font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
+  // font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
   font-size: $font-sm;
-  margin: 15px 0 15px;
-  line-height: 1.25em;
+  margin: 0;
   letter-spacing: 0.015em;
   font-weight: normal;
   text-align: left;
@@ -56,7 +54,6 @@ h2 {
   }
 }
 
-
 a {
   text-decoration: underline;
   color: black;
@@ -69,8 +66,8 @@ a {
 }
 
 p {
-  margin: 10px 0 20px;
-  max-width: 36em;
+  margin: 0;
+  max-width: 26em;
 }
 
 .caption {
@@ -81,15 +78,25 @@ p {
   color: gray;
 }
 
+// Grids
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  .span-2 {
+    grid-column: span 2;
+  }
+}
+
 
 // Header
 header {
   z-index: 1000;
-  width: calc(100vw - 80px);
-  min-height: calc(50vh - 60px);
-  background-color: #64805b;
+  width: calc(100vw - 110px);
+  // min-height: calc(50vh - 20px);
+  margin: 15px;
+  line-height: 1em;
   color: #000;
-  padding: 5px 40px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,22 +105,18 @@ header {
   left: 0;
   @include p(transition, all 200ms ease);
 
-  &.fade {
-    opacity: 0;
-    pointer-events: none;
-    @include p(transition, all 200ms ease);
+  .bg {
+    top: 0;
+    left: 0;
+    z-index: -100;
+    border-radius: 50vh;
+    filter: blur(10px);
+    position: absolute;
+    background-color: #64805b;
+    width: 100%;
+    height: 100%;
   }
 
-  // .name {
-  //   display: inline-block;
-  //   vertical-align: top;
-  //   margin: 0 40px 5px 0;
-  // }
-
-  .bio {
-    display: inline-block;
-    margin-top: 0;
-  }
 }
 
 .menu {
@@ -143,7 +146,7 @@ header {
 // Footer
 .footer {
   .contact {
-    margin: 10px 30px 0 0;
+    margin: 0 30px 0 0;
     display: inline-block;
     color: #000;
   }
