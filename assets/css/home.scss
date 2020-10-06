@@ -6,9 +6,8 @@
 }
 
 @import "webfonts";
-$font-lg: 26px;
-$font-md: 16px;
-$font-sm: 16px;
+$font-body: 24px;
+$font-head: 16px;
 $font-xs: 14px;
 
 // General
@@ -17,17 +16,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Theinhardt', Arial, Helvetica, sans-serif;
-  font-size: $font-md;
+  font-size: $font-head;
   line-height: 1.4em;
   padding: 0;
-  letter-spacing: 0.015em;
+  letter-spacing: -0.01em;
   width: 100%;
   height: 100%;
   @include p(font-smoothing, antialiased);
 }
 
 h1 {
-  font-size: $font-md;
+  font-size: $font-head;
   margin: 4px 10px 10px 0;
   max-width: 26em;
   font-weight: normal;
@@ -36,30 +35,12 @@ h1 {
   }
 }
 
-%h2 {
-  // font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
-  font-size: $font-sm;
-  margin: 0;
-  letter-spacing: 0.015em;
-  font-weight: normal;
-  text-align: left;
-}
-
-h2 {
-  @extend %h2;
-  &.section-title {
-    padding: 45px 0 10px;
-    // border-bottom: 1px solid black;
-    margin-bottom: 30px;
-  }
-}
 
 a {
   text-decoration: underline;
   color: black;
   cursor: pointer;
   transition: all 0.3s;
-
   &:hover {
     opacity: 0.5;
   }
@@ -70,12 +51,17 @@ p {
   max-width: 26em;
 }
 
-.caption {
-  @extend %h2;
-  font-size: $font-xs;
-  margin: 10px 0 40px;
-  // text-align: right;
-  color: gray;
+section {
+  font-family:  Times, serif;
+  font-size: $font-body;
+  letter-spacing: 0.015em;
+  p {
+    text-decoration: none;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
 }
 
 // Grids
@@ -92,9 +78,9 @@ p {
 // Header
 header {
   z-index: 1000;
-  width: calc(100vw - 110px);
+  width: calc(100vw - 120px);
   // min-height: calc(50vh - 20px);
-  margin: 15px;
+  margin: 20px;
   line-height: 1em;
   color: #000;
   padding: 5px 40px 7px;
@@ -102,6 +88,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
+  border-radius: 10px;
   top: 0;
   left: 0;
   @include p(transition, all 200ms ease);
@@ -110,61 +97,35 @@ header {
     top: 0;
     left: 0;
     z-index: -100;
-    border-radius: 50vh;
+    border-radius: 10px;
     filter: blur(10px);
     position: absolute;
-    background-color: #78c55f;
+    background-color: yellow;
     width: 100%;
     height: 100%;
   }
 
-}
-
-.menu {
-  position: fixed;
-  top: 5px;
-  right: 40px;
-  z-index: 2000;
-  text-align: right;
-  cursor: pointer;
-
-  h2 {
-    margin: 4px 0 0;
+  span.location{
+    padding-left: 20px;
   }
 
-  h2.open::after {
-    content: "Info";
-  }
-
-  h2.close::after {
-    content: "Close";
-    color: #000;
-  }
-}
-
-
-
-// Footer
-.footer {
   .contact {
     margin: 0 30px 0 0;
     display: inline-block;
     color: #000;
   }
+
 }
+
 
 
 // Layout
 section {
-  padding: 20px 40px 80px;
+  margin: 20px 60px 80px;
   position: relative;
 
-  &.first {
-    margin-top: 100vh !important;
-  }
-
   &:first-of-type {
-    margin-top: 40px;
+    margin-top: 100px;
   }
 
   .img-wrapper {
@@ -183,16 +144,6 @@ section {
   .img-wrapper::-webkit-scrollbar {
     display: none;
     
-  }
-
-  .date-left {
-    @extend %h2;
-    padding-left: 30px;
-  }
-
-  .date-right {
-    @extend %h2;
-    padding-right: 30px;
   }
 }
 
