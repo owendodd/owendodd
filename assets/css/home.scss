@@ -41,6 +41,14 @@ h2 {
   padding-left: 20px;
 }
 
+h3 {
+  font-size: $font-head;
+  letter-spacing: -.015em;
+  margin: 0;
+  font-weight: normal;
+  font-family: "UniversLTPro-75Black", Arial, Helvetica, sans-serif;
+}
+
 a {
   text-decoration: underline;
   color: black;
