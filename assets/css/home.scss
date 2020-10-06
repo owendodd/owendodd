@@ -6,7 +6,7 @@
 }
 
 @import "webfonts";
-$font-body: 24px;
+$font-body: 26px;
 $font-head: 16px;
 $font-xs: 14px;
 
@@ -15,7 +15,7 @@ body {
   color: black;
   padding: 0;
   margin: 0;
-  font-family: 'Theinhardt', Arial, Helvetica, sans-serif;
+  font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
   font-size: $font-head;
   line-height: 1.4em;
   padding: 0;
@@ -27,14 +27,12 @@ body {
 
 h1 {
   font-size: $font-head;
-  margin: 4px 10px 10px 0;
-  max-width: 26em;
+  margin: 4px 10px 0 0;
   font-weight: normal;
   .location {
     padding-left: 20px;
   }
 }
-
 
 a {
   text-decoration: underline;
@@ -48,20 +46,17 @@ a {
 
 p {
   margin: 0;
-  max-width: 26em;
+  max-width: 30em;
 }
 
 section {
-  font-family:  Times, serif;
+  font-family: Times, serif;
   font-size: $font-body;
   letter-spacing: 0.015em;
   p {
-    text-decoration: none;
-    padding: 40px;
-    border: 1px solid black;
-    border-radius: 8px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
   }
-
 }
 
 // Grids
@@ -73,7 +68,6 @@ section {
     right: 0;
   }
 }
-
 
 // Header
 header {
@@ -105,7 +99,7 @@ header {
     height: 100%;
   }
 
-  span.location{
+  span.location {
     padding-left: 20px;
   }
 
@@ -114,18 +108,14 @@ header {
     display: inline-block;
     color: #000;
   }
-
 }
-
-
 
 // Layout
 section {
   margin: 20px 60px 80px;
   position: relative;
-
   &:first-of-type {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .img-wrapper {
@@ -136,14 +126,14 @@ section {
     margin: 60px 0;
     -ms-overflow-style: none;
 
-    img, video {
+    img,
+    video {
       width: 100%;
     }
   }
 
   .img-wrapper::-webkit-scrollbar {
     display: none;
-    
   }
 }
 
@@ -155,7 +145,6 @@ section {
     img {
       background-color: lightgray;
       width: 100%;
-
     }
   }
 }
@@ -165,13 +154,10 @@ section {
   &:last-of-type {
     padding-bottom: 30px;
   }
-  h2{
+  h2 {
     margin: 0;
   }
-
 }
-
-
 
 @media screen and (max-width: 800px) {
   $mobile-font-lg: 22px;
@@ -217,7 +203,6 @@ section {
     padding: 60px 20px 0;
   }
 
-
   .img-wrapper {
     width: 100vw !important;
     margin-left: -20px;
@@ -225,5 +210,4 @@ section {
       width: 150vw !important;
     }
   }
-
 }
