@@ -43,20 +43,11 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/37d1c3");
 @import url("//hello.myfonts.net/count/2c3be8");
-
-  
-@font-face {font-family: 'LifeSC-Reg';src: url('webfonts/37D1C3_0_0.eot');src: url('webfonts/37D1C3_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37D1C3_0_0.woff2') format('woff2'),url('webfonts/37D1C3_0_0.woff') format('woff'),url('webfonts/37D1C3_0_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Life-Bol';src: url('webfonts/37D1C3_1_0.eot');src: url('webfonts/37D1C3_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37D1C3_1_0.woff2') format('woff2'),url('webfonts/37D1C3_1_0.woff') format('woff'),url('webfonts/37D1C3_1_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Life-Reg';src: url('webfonts/37D1C3_2_0.eot');src: url('webfonts/37D1C3_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37D1C3_2_0.woff2') format('woff2'),url('webfonts/37D1C3_2_0.woff') format('woff'),url('webfonts/37D1C3_2_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'LifeT-ReguRo1';src: url('webfonts/37D1C3_3_0.eot');src: url('webfonts/37D1C3_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37D1C3_3_0.woff2') format('woff2'),url('webfonts/37D1C3_3_0.woff') format('woff'),url('webfonts/37D1C3_3_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Life-RegIta';src: url('webfonts/37D1C3_4_0.eot');src: url('webfonts/37D1C3_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/37D1C3_4_0.woff2') format('woff2'),url('webfonts/37D1C3_4_0.woff') format('woff'),url('webfonts/37D1C3_4_0.ttf') format('truetype');}
+@import url("//hello.myfonts.net/count/3c62a5");
 
 @font-face {font-family: 'UniversLTPro-55Roman';src: url('webfonts/2C3BE8_0_0.eot');src: url('webfonts/2C3BE8_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C3BE8_0_0.woff') format('woff'),url('webfonts/2C3BE8_0_0.ttf') format('truetype');}
+
+@font-face {
+	font-family: 'UniversLTPro-75Black';
+	src: url('webfonts/font.woff2') format('woff2'), url('webfonts/font.woff') format('woff');
+  }

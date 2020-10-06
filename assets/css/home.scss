@@ -15,7 +15,6 @@ body {
   color: black;
   padding: 0;
   margin: 0;
-  font-family: 'UniversLTPro-55Roman', Arial, Helvetica, sans-serif;
   font-size: $font-head;
   line-height: 1.4em;
   padding: 0;
@@ -27,11 +26,19 @@ body {
 
 h1 {
   font-size: $font-head;
+  display: inline;
+  font-weight: normal;
+  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
   margin: 4px 10px 0 0;
   font-weight: normal;
-  .location {
-    padding-left: 20px;
-  }
+}
+
+h2 {
+  font-size: $font-head;
+  font-weight: normal;
+  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
+  display: inline;
+  padding-left: 20px;
 }
 
 a {
