@@ -29,7 +29,7 @@ h1 {
   display: inline;
   font-weight: normal;
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
-  margin: 4px 10px 0 0;
+  margin: 4px 20px 0 0;
   font-weight: normal;
 }
 
@@ -38,7 +38,6 @@ h2 {
   font-weight: normal;
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
   display: inline;
-  padding-left: 20px;
 }
 
 h3 {
@@ -57,6 +56,10 @@ a {
   &:hover {
     opacity: 0.5;
   }
+  &.link {
+    margin: 0 0 0 20px;
+    display: inline-block;
+  }
 }
 
 p {
@@ -70,7 +73,6 @@ section {
   letter-spacing: 0.015em;
   p {
     line-height: 1.4em;
-    margin-bottom: 20px;
   }
 }
 
@@ -118,111 +120,25 @@ header {
     padding-left: 20px;
   }
 
-  .contact {
-    margin: 0 30px 0 0;
-    display: inline-block;
-    color: #000;
-  }
 }
 
 // Layout
 section {
-  margin: 20px 60px 80px;
+  margin: 20px;
+  padding: 30px 40px;
   position: relative;
   &:first-of-type {
     margin-top: 80px;
   }
-
-  .img-wrapper {
+  .bg {
+    top: 0;
+    left: 0;
+    z-index: -100;
+    border-radius: 10px;
+    filter: blur(10px);
+    position: absolute;
+    background-color: lightgray;
     width: 100%;
-    max-width: 1200px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    margin: 60px 0;
-    -ms-overflow-style: none;
-
-    img,
-    video {
-      width: 100%;
-    }
-  }
-
-  .img-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.case-study-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  .case-study {
-    img {
-      background-color: lightgray;
-      width: 100%;
-    }
-  }
-}
-
-.grey {
-  background-color: #f8f8f8;
-  &:last-of-type {
-    padding-bottom: 30px;
-  }
-  h2 {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  $mobile-font-lg: 22px;
-  $mobile-font-md: 18px;
-  $mobile-font-sm: 15px;
-  $mobile-font-xs: 12px;
-
-  body {
-    font-size: $mobile-font-md;
-  }
-
-  h1 {
-    font-size: $mobile-font-lg;
-    margin-bottom: 0;
-  }
-
-  h2 {
-    font-size: $mobile-font-sm !important;
-    width: auto;
-  }
-
-  section .date-left {
-    font-size: $mobile-font-sm !important;
-    padding-left: 15px;
-  }
-
-  section .date-right {
-    font-size: $mobile-font-sm !important;
-    padding-right: 15px;
-  }
-
-  .caption {
-    font-size: $mobile-font-xs !important;
-  }
-
-  header {
-    padding: 15px 20px;
-    width: calc(100vw - 40px);
-    min-height: calc(50vh - 30px);
-  }
-
-  section {
-    padding: 60px 20px 0;
-  }
-
-  .img-wrapper {
-    width: 100vw !important;
-    margin-left: -20px;
-    img {
-      width: 150vw !important;
-    }
+    height: 100%;
   }
 }
