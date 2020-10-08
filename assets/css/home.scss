@@ -6,9 +6,9 @@
 }
 
 @import "webfonts";
-$font-body: 26px;
-$font-head: 16px;
-$font-xs: 14px;
+$font-body: 30px;
+$font-head: 18px;
+$font-subhead: 14px;
 
 // General
 body {
@@ -26,26 +26,26 @@ body {
 
 h1 {
   font-size: $font-head;
-  display: inline;
+  letter-spacing: 0.035em;
   font-weight: normal;
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
-  margin: 4px 20px 0 0;
   font-weight: normal;
+  margin: 5px;
 }
 
 h2 {
   font-size: $font-head;
   font-weight: normal;
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
-  display: inline;
 }
 
 h3 {
-  font-size: $font-head;
-  letter-spacing: -.015em;
+  font-size: $font-subhead;
+  letter-spacing: 0.055em;
   margin: 0;
   font-weight: normal;
-  font-family: "UniversLTPro-75Black", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -56,15 +56,6 @@ a {
   &:hover {
     opacity: 0.5;
   }
-  &.link {
-    margin: 0 0 0 20px;
-    display: inline-block;
-  }
-}
-
-p {
-  margin: 0;
-  max-width: 30em;
 }
 
 section {
@@ -73,28 +64,20 @@ section {
   letter-spacing: 0.015em;
   p {
     line-height: 1.4em;
-  }
-}
-
-// Grids
-.grid-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  .span-2 {
-    grid-column: span 2;
-    right: 0;
+    margin: 0;
+    max-width: 30em;
   }
 }
 
 // Header
 header {
   z-index: 1000;
-  width: calc(100vw - 120px);
-  // min-height: calc(50vh - 20px);
-  margin: 20px;
+  width: calc(50vw - 75px);
+  margin: 30px;
+  text-align: center;
   line-height: 1em;
   color: #000;
-  padding: 5px 40px 7px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -108,27 +91,34 @@ header {
     top: 0;
     left: 0;
     z-index: -100;
-    border-radius: 10px;
-    filter: blur(10px);
+    border-radius: 30px;
+    filter: blur(15px);
     position: absolute;
-    background-color: yellow;
-    width: 100%;
+    background-color: #fff500;
     height: 100%;
+    width: 100%;
   }
 
-  span.location {
-    padding-left: 20px;
+  h1.contact {
+    display: block;
+    margin: 10px;
+    
+    &.first {
+      margin-top: 30px;
+    }
+    &.fade {
+      display: none;
+    }
   }
-
 }
 
 // Layout
 section {
-  margin: 20px;
-  padding: 30px 40px;
+  margin: 30px;
+  padding: 30px 0;
   position: relative;
   &:first-of-type {
-    margin-top: 80px;
+    margin-top: 280px;
   }
   .bg {
     top: 0;

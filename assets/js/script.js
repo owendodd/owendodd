@@ -40,19 +40,15 @@ $('.prev').click(function () {
 
 
 
-// $(window).scroll(function () {
-//   var scroll = $(window).scrollTop();
-//   controller = $(".menu").children("h2");
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
 
-//   if (scroll >= 10) {
-//     $("header").addClass("fade");
-//     controller.addClass("open");
-//     controller.removeClass("close");
-//   } else {
-//     $("header").removeClass("fade");
-//     controller.removeClass("open close");
-//   }
-// });
+  if (scroll >= 10) {
+    $("h1.contact").addClass("fade");
+  } else {
+    $("h1.contact").removeClass("fade");
+  }
+});
 
 // $('.menu').click(function () {
 //   var controller = $(".menu").children("h2");
