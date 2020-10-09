@@ -5,8 +5,6 @@ $(function () {
 
   first_slides.addClass('show');
   $('.indicator').html('1/' + total_slides);
-
-  console.log(first_slides);
 });
 
 
@@ -50,11 +48,9 @@ $(window).scroll(function () {
   }
 });
 
-// $('.menu').click(function () {
-//   var controller = $(".menu").children("h2");
+$('header').hover(function () {
+  console.log("test"); 
+  $('h1.contact').toggleClass("fade");
 
-//   $("header").toggleClass("fade");
-//   controller.toggleClass("open");
-//   controller.toggleClass("close");
 
-// });
+});

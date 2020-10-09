@@ -75,6 +75,7 @@ header {
   width: calc(50vw - 75px);
   margin: 30px;
   text-align: center;
+  cursor: pointer;
   line-height: 1em;
   color: #000;
   padding: 30px;
@@ -95,6 +96,7 @@ header {
     filter: blur(15px);
     position: absolute;
     background-color: #fff500;
+    @include p(transition, all 00ms ease);
     height: 100%;
     width: 100%;
   }
