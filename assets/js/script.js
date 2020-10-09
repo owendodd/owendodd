@@ -42,15 +42,14 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   if (scroll >= 10) {
-    $("h1.contact").addClass("fade");
+    $("h1.contact").slideUp();
   } else {
-    $("h1.contact").removeClass("fade");
+    $("h1.contact").slideDown();
   }
 });
 
-$('header').hover(function () {
-  console.log("test"); 
-  $('h1.contact').toggleClass("fade");
+$('header').delay("slow").hover(function () {
+  $("h1.contact").slideToggle();
 
 
 });
