@@ -67,7 +67,7 @@ a {
 // Header
 header {
   z-index: 1000;
-  width: calc(50vw - 75px);
+  width: calc(50vw - 120px);
   margin: 30px;
   text-align: center;
   cursor: pointer;
@@ -171,3 +171,9 @@ section {
 }
 
 
+@media screen and (max-width: 900px) {
+
+  header {
+    width: calc(100vw - 120px);
+  }
+}
