@@ -15,7 +15,7 @@ body {
   color: black;
   padding: 0;
   margin: 0;
-  font-size: $font-head;
+  font-size: $font-body;
   line-height: 1.4em;
   padding: 0;
   letter-spacing: -0.01em;
@@ -30,7 +30,7 @@ h1 {
   font-weight: normal;
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
   font-weight: normal;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 h2 {
@@ -54,20 +54,15 @@ a {
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
-    opacity: 0.5;
+    text-decoration: none;
   }
 }
 
-section {
-  font-family: Times, serif;
-  font-size: $font-body;
-  letter-spacing: 0.015em;
   p {
     line-height: 1.4em;
     margin: 0;
-    max-width: 30em;
   }
-}
+
 
 // Header
 header {
@@ -76,7 +71,6 @@ header {
   margin: 30px;
   text-align: center;
   cursor: pointer;
-  line-height: 1em;
   color: #000;
   padding: 30px;
   display: flex;
@@ -95,8 +89,7 @@ header {
     border-radius: 30px;
     filter: blur(15px);
     position: absolute;
-    background-color: #fff500;
-    @include p(transition, all 00ms ease);
+    background-color: CornflowerBlue;
     height: 100%;
     width: 100%;
   }
@@ -104,19 +97,20 @@ header {
   h1.contact {
     display: block;
     margin: 10px;
-    
+
     &.first {
       margin-top: 30px;
     }
-    &.fade {
-      display: none;
-    }
+  }
+  h1, h3 {
+    line-height: 1em;
   }
 }
 
 // Layout
 section {
   margin: 30px;
+  max-width: 30em;
   position: relative;
   &:first-of-type {
     margin-top: 300px;
@@ -125,11 +119,53 @@ section {
     top: 0;
     left: 0;
     z-index: -100;
-    border-radius: 10px;
-    filter: blur(10px);
+    border-radius: 30px;
+    filter: blur(15px);
     position: absolute;
-    background-color: lightgray;
+    background-color: Gainsboro;
     width: 100%;
     height: 100%;
+  }
+  &.projects {
+    margin: 100px 30px;
+    h1 {
+      text-align: center;
+      padding: 60px 0 30px;
+    }
+    .link-block {
+      padding: 0 40px 60px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      a {
+        margin: 10px;
+        position: relative;
+        padding: 24px 40px;
+        text-decoration: none;
+        .link-bg {
+          top: 0;
+          left: 0;
+          z-index: -100;
+          border-radius: 30px;
+          filter: blur(10px);
+          position: absolute;
+          background-color: LemonChiffon;
+          height: 100%;
+          width: 100%;
+          @include p(transition, all 200ms ease);
+        }
+        &:hover .link-bg{
+          background-color: cornflowerblue;
+        }
+        h1,
+        h2 {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          line-height: 1.4em;
+        }
+      }
+    }
   }
 }

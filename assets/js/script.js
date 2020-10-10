@@ -42,14 +42,12 @@ $(window).scroll(function () {
   var scroll = $(window).scrollTop();
 
   if (scroll >= 10) {
-    $("h1.contact").slideUp();
+    $(".collapser").slideUp(300);
   } else {
-    $("h1.contact").slideDown();
+    $(".collapser").slideDown(300);
   }
 });
 
-$('header').delay("slow").hover(function () {
-  $("h1.contact").slideToggle();
-
-
+$('header').click(function () {
+  $(".collapser").slideToggle();
 });
