@@ -1,0 +1,179 @@
+@mixin p($property, $val) {
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}
+
+@import "webfonts";
+$font-body: 30px;
+$font-head: 18px;
+$font-subhead: 14px;
+
+// General
+body {
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-size: $font-body;
+  line-height: 1.4em;
+  padding: 0;
+  letter-spacing: -0.01em;
+  width: 100%;
+  height: 100%;
+  @include p(font-smoothing, antialiased);
+}
+
+h1 {
+  font-size: $font-head;
+  letter-spacing: 0.035em;
+  font-weight: normal;
+  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: $font-head;
+  font-weight: normal;
+  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: $font-subhead;
+  letter-spacing: 0.055em;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+  p {
+    line-height: 1.4em;
+    margin: 0;
+  }
+
+
+// Header
+header {
+  z-index: 1000;
+  width: calc(50vw - 120px);
+  margin: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  @include p(transition, all 200ms ease);
+
+  .bg {
+    top: 0;
+    left: 0;
+    z-index: -100;
+    border-radius: 30px;
+    filter: blur(15px);
+    position: absolute;
+    background-color: #fff500;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1.contact {
+    display: block;
+    margin: 10px;
+
+    &.first {
+      margin-top: 30px;
+    }
+  }
+  h1, h3 {
+    line-height: 1em;
+  }
+}
+
+// Layout
+section {
+  margin: 30px;
+  max-width: 30em;
+  position: relative;
+  &:first-of-type {
+    margin-top: 300px;
+  }
+  .bg {
+    top: 0;
+    left: 0;
+    z-index: -100;
+    border-radius: 30px;
+    filter: blur(15px);
+    position: absolute;
+    background-color: Gainsboro;
+    width: 100%;
+    height: 100%;
+  }
+  &.projects {
+    margin: 100px 30px;
+    h1 {
+      text-align: center;
+      padding: 60px 0 30px;
+    }
+    .link-block {
+      padding: 0 40px 60px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      a {
+        margin: 10px;
+        position: relative;
+        padding: 24px 40px;
+        text-decoration: none;
+        .link-bg {
+          top: 0;
+          left: 0;
+          z-index: -100;
+          border-radius: 30px;
+          filter: blur(15px);
+          position: absolute;
+          background-color: LemonChiffon;
+          height: 100%;
+          width: 100%;
+          @include p(transition, all 300ms ease);
+        }
+        &:hover .link-bg{
+          background-color: #fff500;
+        }
+        h1,
+        h2 {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          line-height: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  header {
+    width: calc(100vw - 120px);
+  }
+}
