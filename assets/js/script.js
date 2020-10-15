@@ -51,3 +51,9 @@ $(window).scroll(function () {
 $('header').click(function () {
   $(".collapser").slideToggle();
 });
+
+$('header a').click(function(e) {
+  e.stopPropagation();
+  // ('a').trigger("click");
+  console.log('test');
+});

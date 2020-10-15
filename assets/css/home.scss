@@ -31,7 +31,7 @@ h1 {
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
   letter-spacing: 0.035em;
   font-weight: normal;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 h2 {
@@ -106,7 +106,12 @@ header {
     }
   }
   a {
-    background-color: none;
+    background-color: transparent;
+    box-shadow: none;
+    &:hover {
+      background-color: transparent;
+    box-shadow: none;
+    }
   }
 }
 
@@ -121,31 +126,24 @@ section {
   }
   &.projects {
     h4 {
-      padding:  0 0 10px;
+      padding: 0 0 10px;
       text-align: center;
       border-bottom: 1px solid rgb(225, 225, 225);
     }
     h1 {
       padding: 10px 0;
+      text-align: center;
     }
     .link-block {
       padding: 0 0 20px;
-      text-align: center;
       a {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0 20px;
-        padding: 10px;
-        text-decoration: none;
-        border-radius: 30px;
-        h1,
-        h2 {
-          padding: 0;
-          margin: 0;
-          text-align: center;
-          line-height: 1em;
+        line-height: 2em;
+        margin-right: 10px;
+        span {
+          font-size: $font-head;
+          font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
+          letter-spacing: 0.035em;
+          font-weight: normal;
         }
       }
     }
