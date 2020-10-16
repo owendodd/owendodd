@@ -34,13 +34,6 @@ h1 {
   margin: 5px 0;
 }
 
-h2 {
-  font-size: $font-subhead;
-  font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
-  margin: 0;
-  font-weight: normal;
-}
-
 h3 {
   font-size: $font-subhead;
   font-family: "UniversLTPro-55Roman", Arial, Helvetica, sans-serif;
@@ -110,7 +103,7 @@ header {
     box-shadow: none;
     &:hover {
       background-color: transparent;
-    box-shadow: none;
+      box-shadow: none;
     }
   }
 }
@@ -124,6 +117,9 @@ section {
   &:first-of-type {
     margin-top: 240px;
   }
+  &:last-of-type {
+    margin-top: 90px;
+  }
   &.projects {
     h4 {
       padding: 0 0 10px;
@@ -136,6 +132,7 @@ section {
     }
     .link-block {
       padding: 0 0 20px;
+      text-align: center;
       a {
         line-height: 2em;
         margin-right: 10px;
