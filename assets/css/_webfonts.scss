@@ -41,15 +41,15 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/37d1c3");
-@import url("//hello.myfonts.net/count/2c3be8");
-@import url("//hello.myfonts.net/count/3c62a5");
-
-@font-face {font-family: 'UniversLTPro-55Roman';src: url('webfonts/2C3BE8_0_0.eot');src: url('webfonts/2C3BE8_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C3BE8_0_0.woff') format('woff'),url('webfonts/2C3BE8_0_0.ttf') format('truetype');}
+@import url("//hello.myfonts.net/count/3d6149");
+@import url("//hello.myfonts.net/count/3d61d7");
 
 @font-face {
-	font-family: 'UniversLTPro-45Light';
-	src: url('webfonts/font.woff2') format('woff2'), url('webfonts/font.woff') format('woff');
+	font-family: "UniversLTPro-45Light";
+	src: url('webFonts/UniversLTPro45Light/font.woff2') format('woff2'), url('webFonts/UniversLTPro45Light/font.woff') format('woff');
   }
-@font-face{font-family:'Times Seven';src:url("webfonts/TimesNRSevenMTStd-4af786abc04740fc7d76be6a52aaa139c9e7c32ec71721b1fc652eaf522182b2.woff") format("woff"),url("/assets/TimesNRSevenMTStd-4d8e48bd25ad4829b41c773fccf5000970a2a2d070341d63ab9b1f0de214ee21.woff2") format("woff2");font-weight:normal;font-style:normal}
-@font-face{font-family:'Times Seven';src:url("webfonts/TimesNRSevenMTStd-Italic-86a4e5396492357eb2179953c7b7e771c4b206924f1e082e600a266b7d9f263f.woff") format("woff"),url("/assets/TimesNRSevenMTStd-Italic-9fda2145fb58fd665e62e901c5e3b18735c27c4d750c2e52755ccf27e2414644.woff2") format("woff2");font-weight:normal;font-style:italic}
+  
+@font-face {
+	font-family: "TimesTenLT-Roman";
+	src: url('webFonts/TimesTenLTRoman/font.woff2') format('woff2'), url('webFonts/TimesTenLTRoman/font.woff') format('woff');
+  }
