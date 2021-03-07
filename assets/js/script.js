@@ -9,11 +9,9 @@
 // });
 
 $('.nameplate, .menu-icon').click(function () {
-  $(".menu").slideDown(200);
-  console.log('click');
+  $(".dropdown").slideDown();
 });
 
-$('header').mouseut(function () {
-  $(".menu").slideUp(200);
-  console.log('mouse');
+$('header').mouseleave(function () {
+  $(".dropdown").slideUp();
 });

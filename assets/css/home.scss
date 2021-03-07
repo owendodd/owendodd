@@ -8,7 +8,7 @@
 @import "webfonts";
 $font-body: 22px;
 $font-head: 16px;
-$font-subhead: 18px;
+$font-subhead: 20px;
 
 // General
 body {
@@ -28,9 +28,9 @@ h1 {
   font-size: $font-head;
   font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
   letter-spacing: 0.025em;
-  line-height: 1em;
+  line-height: 1.3em;
   font-weight: normal;
-  margin: 5px 0;
+  margin: 0;
 }
 
 h3 {
@@ -50,8 +50,8 @@ a {
   cursor: pointer;
   @include p(transition, all 200ms ease);
   &:hover {
-    background-color: #f3f3f3;
-    box-shadow: 0 0 5px 5px #f3f3f3;
+    background-color: #e2e2e2;
+    box-shadow: 0 0 5px 5px #e2e2e2;
   }
 }
 
@@ -63,74 +63,86 @@ p {
 // Header
 
 header {
-  margin: 50px 30px;
-  display: flex;
-  flex-direction: row;
+  margin: 30px;
   position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
-  .pill {
-    padding: 24px 30px;
-    // height: 60px;
+  .menu-top {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 0 7px 7px #fff9d1;
-    background-color: #fff9d1;
-    border-radius: 30px;
-    @include p(transition, all 200ms ease);
-    &.nameplate {
-      margin-right: 30px;
-      &:hover {
-        cursor: pointer;
-        background-color: #f3f3f3;
-        box-shadow: 0 0 7px 7px #f3f3f3;
-      }
-      .title {
-        z-index: 1001;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-      }
-      .menu-icon {
-        margin-right: 30px;
-        .bar {
-          padding: 0;
-          width: 20px;
-          height: 1px;
-          background-color: #000;
-          margin: 6px 0;
-          border-radius: 2px;
-        }
-      }
-      h1 {
-        margin: 5px 0 3px;
-      }
-      .menu {
-        display: none;
-        max-width: 100%;
-        width: 400px;
-        margin-top: 20px;
-        padding-top: 10px;
-        text-align: center;
-        border-top: 1px solid black;
-        a {
-          margin-top: 10px;
-          display: block;
-          font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
-          font-size: $font-subhead;
-          background-color: transparent;
-          box-shadow: none;
-        }
+    flex-direction: row;
+    align-items: center;
+    .menu-icon {
+      margin-right: 20px;
+      padding: 30px;
+      .bar {
+        padding: 0;
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+        margin: 6px 0;
+        border-radius: 2px;
       }
     }
-    &.page-header {
-      vertical-align: top;
+  }
+  .menu-icon,
+  .nameplate,
+  .dropdown {
+    box-shadow: 0 0 7px 7px #fff9d1;
+    background-color: #fff9d1;
+    padding: 20px 30px;
+    border-radius: 20px;
+  }
+  .nameplate {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    @include p(transition, all 400ms ease);
+  }
+  .menu-icon {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include p(transition, all 400ms ease);
+    .bar {
+      padding: 0;
+      width: 20px;
+      height: 1px;
+      background-color: #000;
+      margin: 3px 0;
+      border-radius: 2px;
+    }
+  }
+  .dropdown {
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+    a {
+      padding: 8px 0 5px;
+      display: block;
+      font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
+      font-size: $font-subhead;
       background-color: transparent;
       box-shadow: none;
-      justify-content: flex-start;
+      @include p(transition, all 400ms ease);
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+header {
+  &:hover {
+    .menu-icon,
+    .nameplate {
+      box-shadow: 0 0 7px 7px #e2e2e2;
+      background-color: #e2e2e2;
+      cursor: pointer;
     }
   }
 }
