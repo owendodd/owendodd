@@ -1,19 +1,19 @@
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
+// $(window).scroll(function () {
+//   var scroll = $(window).scrollTop();
 
-  if (scroll >= 10) {
-    $(".collapser").slideUp(300);
-  } else {
-    $(".collapser").slideDown(300);
-  }
+//   if (scroll >= 10) {
+//     $(".collapser").slideUp(300);
+//   } else {
+//     $(".collapser").slideDown(300);
+//   }
+// });
+
+$('.nameplate, .menu-icon').click(function () {
+  $(".menu").slideDown(200);
+  console.log('click');
 });
 
-$('header').click(function () {
-  $(".collapser").slideToggle();
-});
-
-$('header a').click(function(e) {
-  e.stopPropagation();
-  // ('a').trigger("click");
-  console.log('test');
+$('header').mouseut(function () {
+  $(".menu").slideUp(200);
+  console.log('mouse');
 });
