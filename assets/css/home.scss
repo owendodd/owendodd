@@ -8,7 +8,7 @@
 @import "webfonts";
 $font-body: 22px;
 $font-head: 16px;
-$font-subhead: 20px;
+$font-subhead: 18px;
 
 // General
 body {
@@ -73,18 +73,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    .menu-icon {
-      margin-right: 20px;
-      padding: 30px;
-      .bar {
-        padding: 0;
-        width: 20px;
-        height: 1px;
-        background-color: #000;
-        margin: 6px 0;
-        border-radius: 2px;
-      }
-    }
   }
   .menu-icon,
   .nameplate,
@@ -95,7 +83,7 @@ header {
     border-radius: 20px;
   }
   .nameplate {
-    width: 300px;
+    // width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -103,47 +91,60 @@ header {
     @include p(transition, all 400ms ease);
   }
   .menu-icon {
-    margin-right: 20px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     @include p(transition, all 400ms ease);
     .bar {
-      padding: 0;
       width: 20px;
       height: 1px;
       background-color: #000;
-      margin: 3px 0;
+      margin: 5px 0;
       border-radius: 2px;
-    }
-  }
-  .dropdown {
-    margin-top: 20px;
-    text-align: center;
-    display: none;
-    a {
-      padding: 8px 0 5px;
-      display: block;
-      font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
-      font-size: $font-subhead;
-      background-color: transparent;
-      box-shadow: none;
       @include p(transition, all 400ms ease);
-      &:hover {
-        opacity: 0.6;
+      &.one.x {
+        position: absolute;
+        margin: 0;
+        transform: rotate(-45deg);
+      }
+      &.two.x {
+        position: absolute;
+        margin: 0;
+        transform: rotate(45deg);
       }
     }
   }
 }
-
-header {
-  &:hover {
-    .menu-icon,
-    .nameplate {
-      box-shadow: 0 0 7px 7px #e2e2e2;
-      background-color: #e2e2e2;
-      cursor: pointer;
+.dropdown {
+  margin-top: 27px;
+  text-align: center;
+  display: none;
+  a {
+    padding: 8px 0 5px;
+    display: block;
+    font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
+    font-size: $font-subhead;
+    background-color: transparent;
+    box-shadow: none;
+    @include p(transition, all 400ms ease);
+    &:hover {
+      opacity: 0.6;
     }
+  }
+}
+
+.menu-icon,
+.nameplate,
+.dropdown {
+  &:hover {
+    box-shadow: 0 0 7px 7px #e2e2e2;
+    background-color: #e2e2e2;
+    cursor: pointer;
   }
 }
 

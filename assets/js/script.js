@@ -8,10 +8,12 @@
 //   }
 // });
 
-$('.nameplate, .menu-icon').click(function () {
-  $(".dropdown").slideDown();
+$('.menu-icon').click(function () {
+  $(".dropdown").slideToggle();
+  $(".bar").toggleClass('x');
 });
 
 $('header').mouseleave(function () {
   $(".dropdown").slideUp();
+  $(".bar").toggleClass('x');
 });
