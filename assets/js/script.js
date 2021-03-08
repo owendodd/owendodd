@@ -1,11 +1,4 @@
 $('.menu-icon').click(function () {
-  $(".menu-item").toggleClass('show');
+  $(".menu-item").fadeToggle().css('display', 'flex');
   $(".bar").toggleClass('x');
 });
-
-// $('header').mouseleave(function () {
-//   setTimeout(function() {
-//   $(".menu-item").removeClass('show');
-//   $(".bar").removeClass('x');
-//   }, 400);
-// });
