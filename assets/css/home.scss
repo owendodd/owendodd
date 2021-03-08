@@ -27,7 +27,7 @@ body {
 h1 {
   font-size: $font-head;
   font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.05em;
   line-height: 1.3em;
   font-weight: normal;
   margin: 0;
@@ -35,6 +35,7 @@ h1 {
 
 h3 {
   font-size: $font-head;
+  letter-spacing: 0.035em;
   font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
   margin: 0;
   line-height: 1em;
@@ -42,22 +43,28 @@ h3 {
 }
 
 a {
-  text-decoration: none;
-  border-radius: 10px;
   color: black;
-  background-color: #fff9d1;
-  box-shadow: 0 0 5px 5px #fff9d1;
-  cursor: pointer;
-  @include p(transition, all 200ms ease);
-  &:hover {
-    background-color: #e2e2e2;
-    box-shadow: 0 0 5px 5px #e2e2e2;
-  }
+  text-decoration: none;
 }
+
+
 
 p {
   line-height: 1.55em;
   margin: 0;
+  a {
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    background-color: #fff9d1;
+    box-shadow: 0 0 5px 5px #fff9d1;
+    cursor: pointer;
+    @include p(transition, all 200ms ease);
+    &:hover {
+      background-color: #e2e2e2;
+      box-shadow: 0 0 5px 5px #e2e2e2;
+    }
+  }
 }
 
 // Header
@@ -68,38 +75,45 @@ header {
   z-index: 1000;
   top: 0;
   left: 0;
-  .menu-top {
+  .menu {
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
   .menu-icon,
-  .nameplate,
-  .dropdown {
-    box-shadow: 0 0 7px 7px #fff9d1;
-    background-color: #fff9d1;
-    padding: 20px 30px;
-    border-radius: 20px;
-  }
+  .menu-item,
   .nameplate {
-    // width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    @include p(transition, all 400ms ease);
-  }
-  .menu-icon {
-    padding: 0;
-    width: 80px;
+    box-shadow: 0 0 10px 4px #fff9d1;
+    background-color: #fff9d1;
+    padding: 0 30px;
+    margin: 0 27px 27px 0;
     height: 80px;
-    margin-right: 27px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     @include p(transition, all 400ms ease);
+  }
+  .nameplate {
+    border-radius: 20px;
+  }
+  .menu-item {
+    border-radius: 60px;
+    opacity: 0;
+    pointer-events: none;
+    cursor: auto;
+    &.show {
+      opacity: 1;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+  }
+  .menu-icon{
+    padding: 0;
+    width: 80px;
+    border-radius: 60px;
     .bar {
       width: 20px;
       height: 1px;
@@ -120,29 +134,11 @@ header {
     }
   }
 }
-.dropdown {
-  margin-top: 27px;
-  text-align: center;
-  display: none;
-  a {
-    padding: 8px 0 5px;
-    display: block;
-    font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
-    font-size: $font-subhead;
-    background-color: transparent;
-    box-shadow: none;
-    @include p(transition, all 400ms ease);
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-}
 
 .menu-icon,
-.nameplate,
-.dropdown {
+.menu-item {
   &:hover {
-    box-shadow: 0 0 7px 7px #e2e2e2;
+    box-shadow: 0 0 10px 4px #e2e2e2;
     background-color: #e2e2e2;
     cursor: pointer;
   }
@@ -157,6 +153,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   .intro {
+
     p {
       margin: 0 0 30px 0;
       max-width: 34em;
