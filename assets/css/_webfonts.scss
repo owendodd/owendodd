@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3658179, 2018-10-20T14:20:36-0400
+ * MyFonts Webfont Build ID 4025585, 2021-03-10T16:56:05-0500
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -8,48 +8,29 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: LifeSC-Reg by URW
- * URL: https://www.myfonts.com/fonts/urw/life/sc-t-regular/
- * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
- * Licensed pageviews: 20,000
+ * Webfont: TimesTenLT-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/times-ten/roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1988, 1990, 1993, 1995, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Librar
  * 
- * Webfont: Life-Bol by URW
- * URL: https://www.myfonts.com/fonts/urw/life/t-bold/
- * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
- * Licensed pageviews: 20,000
- * 
- * Webfont: Life-Reg by URW
- * URL: https://www.myfonts.com/fonts/urw/life/t-regular/
- * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
- * Licensed pageviews: 20,000
- * 
- * Webfont: LifeT-ReguRo1 by URW
- * URL: https://www.myfonts.com/fonts/urw/life/rounded/
- * Copyright: URW Software, Copyright 1994 by URW
- * Licensed pageviews: 30,000
- * 
- * Webfont: Life-RegIta by URW
- * URL: https://www.myfonts.com/fonts/urw/life/t-regular-italic/
- * Copyright: (URW)++,Copyright 2006 by (URW)++ Design &amp; Development
- * Licensed pageviews: 20,000
+ * Webfont: UniversLTPro-45Light by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/univers/pro-45-light/
+ * Copyright: Copyright &amp;#x00A9; 2014 Monotype GmbH. All rights reserved.
  * 
  * 
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3658179
  * 
- * © 2018 MyFonts Inc
+ * © 2021 MyFonts Inc
 */
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3d6149");
-@import url("//hello.myfonts.net/count/3d61d7");
-
-@font-face {
-	font-family: "UniversLTPro-45Light";
-	src: url('../webFonts/UniversLTPro45Light/font.woff2') format('woff2'), url('../webFonts/UniversLTPro45Light/font.woff') format('woff');
-  }
+@import url("//hello.myfonts.net/count/3d6cf1");
   
 @font-face {
-	font-family: "TimesTenLT-Roman";
-	src: url('../webFonts/TimesTenLTRoman/font.woff2') format('woff2'), url('../webFonts/TimesTenLTRoman/font.woff') format('woff');
-  }
+  font-family: "UniversLTPro-45Light";
+  src: url('webFonts/UniversLTPro45Light/font.woff2') format('woff2'), url('webFonts/UniversLTPro45Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TimesTenLT-Roman";
+  src: url('webFonts/TimesTenLTRoman/font.woff2') format('woff2'), url('webFonts/TimesTenLTRoman/font.woff') format('woff');
+}
+
