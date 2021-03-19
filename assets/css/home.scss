@@ -10,10 +10,11 @@ $font-body: 22px;
 $font-head: 34px;
 $font-subhead: 16px;
 
+
 // General
 body {
   color: black;
-  font-family: "Dutch801BT-Roman", "Times New Roman", Times, serif;
+  font-family: "TimesTenLT-Roman", "Times New Roman", Times, serif;
   padding: 0;
   margin: 0;
   font-size: $font-body;
@@ -36,6 +37,7 @@ h1 {
 
 h2, .caption {
   font-size: $font-subhead;
+
   font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.3em;
@@ -44,6 +46,15 @@ h2, .caption {
   &.mobile {
     display: none;
   }
+}
+
+h3 {
+  font-size: $font-head;
+  letter-spacing: 0.035em;
+  font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.5em;
+  font-weight: normal;
 }
 
 a {
@@ -65,6 +76,7 @@ p {
 }
 
 // Header
+
 header {
   margin: 20px 50px;
   width: calc(100vw - 100px);
@@ -73,8 +85,7 @@ header {
   top: 0;
   left: 0;
   display: flex;
-    flex-direction: row;
-    // justify-content: space-between;
+   flex-direction: row;
   .menu {
     height: 100%;
     display: flex;
@@ -87,7 +98,8 @@ header {
   .nameplate {
     box-shadow: 0 0 10px 4px #fff9d1;
     background-color: #fff9d1;
-    padding: 0 25px;
+    padding: 0 30px;
+    margin: 10px;
     height: 80px;
     margin: 0 20px 0 0;
     display: flex;
@@ -101,6 +113,9 @@ header {
   .menu-item {
     border-radius: 60px;
     display: none;
+    &.fade {
+      opacity: 1;
+    }
   }
   .menu-icon {
     padding: 0 !important;
@@ -131,8 +146,8 @@ header {
 .menu-item {
   &:hover {
     @include p(transition, all 400ms ease);
-    box-shadow: 0 0 10px 4px #ececec;
-    background-color: #ececec;
+    box-shadow: 0 0 10px 4px #e2e2e2;
+    background-color: #e2e2e2;
     cursor: pointer;
   }
 }
@@ -197,7 +212,6 @@ footer {
     }
   }
 }
-
 
 @media (max-width: 800px) {
   body {
