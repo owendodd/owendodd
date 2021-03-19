@@ -170,8 +170,13 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      @include p(transition, all 200ms ease);
       box-shadow: 0 0 10px 4px #ececec;
       background-color: #ececec;
+      &:hover {
+        box-shadow: 0 0 10px 4px #fff9d1;
+      background-color: #fff9d1;
+      }
       h2 {
         margin-top: 2px;
       }
