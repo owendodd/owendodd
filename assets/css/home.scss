@@ -6,9 +6,10 @@
 }
 
 @import "webfonts";
-$font-body: 24px;
-$font-head: 16px;
-$font-subhead: 18px;
+$font-body: 22px;
+$font-head: 34px;
+$font-subhead: 16px;
+
 
 // General
 body {
@@ -26,6 +27,17 @@ body {
 
 h1 {
   font-size: $font-head;
+  font-family: "Dutch801BT-RomanHeadline", "Times New Roman", Times, serif;
+  font-weight: normal;
+  line-height: 1.2em;
+  letter-spacing: 0.025em;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+h2, .caption {
+  font-size: $font-subhead;
+
   font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.3em;
@@ -66,12 +78,14 @@ p {
 // Header
 
 header {
-  padding: 20px 30px;
-  width: calc(100vw - 60px);
+  margin: 20px 50px;
+  width: calc(100vw - 100px);
   position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
+  display: flex;
+   flex-direction: row;
   .menu {
     height: 100%;
     display: flex;
@@ -87,6 +101,7 @@ header {
     padding: 0 30px;
     margin: 10px;
     height: 80px;
+    margin: 0 20px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,95 +152,63 @@ header {
   }
 }
 
-// Layout
-
-.content {
-  margin: 160px 50px 40px;
-  min-height: calc(100vh - 200px);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 40px;
-  .intro {
-    grid-column: span 3;
+// Footer
+footer {
+  margin: 120px 50px 0;
+  .link-menu {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 40px;
-    p {
-      margin: 0 0 30px 0;
-      max-width: 34em;
-    }
-    h3 {
-      margin: auto 0 10px;
-    }
-    .img-wrapper {
-      grid-column: span 3;
-      margin: 20px 0 40px;
-      img,
-      video {
-        max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+   .link-item {
+      margin: 0 20px 20px 0;
+      padding: 0 20px;
+      height: 40px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px 4px #ececec;
+      background-color: #ececec;
+      h2 {
+        margin-top: 2px;
       }
-      // &.header {
-      //   margin: 20px 0 40px;
-      // }
     }
-  }
-  .images {
-    grid-column: span 4;
-    margin: 20px 0 40px;
-    column-gap: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    img,
-    video {
-      grid-column: span 3;
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
-      filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
-    }
-    h1 {
-      grid-column: span 3;
-      margin: 0 0 20px;
-    }
-    h3 {
-      margin: 30px 0 40px;
-      grid-column: span 3;
-      max-width: 100%;
+    .link-icon {
+      cursor: pointer;
     }
   }
 }
 
-.info-block {
-  margin-top: auto;
-  grid-column: span 4;
-  column-gap: 40px;
-  display: grid;
-  grid-template-columns:minmax(200px, auto) 1fr 1fr 1fr 1fr;
-  .contact-block {
-    grid-column: span 1;
-    .contact-row {
-      display: flex;
-      flex-direction: row;
-      h3 {
-        display: block;
-        margin: 0;
-        &.label {
-          margin-right: 10px;
-          width: 30px;
-        }
-        a {
-          margin-right: 20px;
-          background-color: white;
-          box-shadow: none;
-          text-decoration: underline;
-          @include p(transition, all 200ms ease);
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
+// Layout
+
+.content {
+  margin: 180px 60px 40px;
+  section {
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    p {
+      margin: 10px 0 20px;
+      max-width: 620px;
+      text-align: left;
+    }
+    h2 {
+      text-align: left;
+      margin: 40px 0 10px 0;
+    }
+    img, video {
+      width: 100%;
+      max-width: 1000px;
+      margin: 30px auto 30px;
+      -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+      filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+    }
+    .caption {
+      margin: 0 0 90px;
+      text-align: center;
     }
   }
 }
@@ -235,8 +218,8 @@ header {
     font-size: 20px;
   }
 
-  header {
-    padding: 10px;
+  header,  footer {
+    margin: 10px 10px 0;
     width: calc(100vw - 20px);
   }
 
@@ -268,7 +251,7 @@ header {
 }
 
 @media (max-width: 374px) {
-  h1 {
+  h2 {
     &.desktop {
       display: none;
     }
