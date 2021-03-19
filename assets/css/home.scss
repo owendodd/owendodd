@@ -7,7 +7,7 @@
 
 @import "webfonts";
 $font-body: 22px;
-$font-head: 42px;
+$font-head: 34px;
 $font-subhead: 16px;
 
 // General
@@ -28,15 +28,13 @@ h1 {
   font-size: $font-head;
   font-family: "Dutch801BT-RomanHeadline", "Times New Roman", Times, serif;
   font-weight: normal;
+  line-height: 1.2em;
   letter-spacing: 0.025em;
   text-align: center;
   margin: 0 0 40px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
-h2 {
+h2, .caption {
   font-size: $font-subhead;
   font-family: "UniversLTPro-45Light", Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
@@ -68,7 +66,7 @@ p {
 
 // Header
 header {
-  padding: 20px 50px;
+  margin: 20px 50px;
   width: calc(100vw - 100px);
   position: fixed;
   z-index: 1000;
@@ -76,7 +74,7 @@ header {
   left: 0;
   display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
   .menu {
     height: 100%;
     display: flex;
@@ -91,6 +89,7 @@ header {
     background-color: #fff9d1;
     padding: 0 25px;
     height: 80px;
+    margin: 0 20px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +101,6 @@ header {
   .menu-item {
     border-radius: 60px;
     display: none;
-    margin: 0 20px 0 0;
   }
   .menu-icon {
     padding: 0 !important;
@@ -141,7 +139,7 @@ header {
 
 // Footer
 footer {
-  margin: 120px 0 0;
+  margin: 120px 50px 0;
   .link-menu {
     height: 100%;
     display: flex;
@@ -149,7 +147,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
    .link-item {
-      margin: 0 20px 0 0;
+      margin: 0 20px 20px 0;
       padding: 0 20px;
       height: 40px;
       border-radius: 20px;
@@ -172,26 +170,29 @@ footer {
 // Layout
 
 .content {
-  margin: 140px 50px 40px;
+  margin: 180px 60px 40px;
   section {
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
     p {
-      margin: 0 0 30px;
-      max-width: 740px;
+      margin: 10px 0 20px;
+      max-width: 620px;
       text-align: left;
     }
-    img {
+    h2 {
+      text-align: left;
+      margin: 40px 0 10px 0;
+    }
+    img, video {
       width: 100%;
-      max-width: 880px;
-      margin: 0 auto;
-      background-color: #ececec;
+      max-width: 1000px;
+      margin: 30px auto 30px;
       -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
       filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
     }
-    h2 {
-      margin: 30px 0 90px;
+    .caption {
+      margin: 0 0 90px;
       text-align: center;
     }
   }
@@ -203,8 +204,8 @@ footer {
     font-size: 20px;
   }
 
-  header {
-    padding: 10px;
+  header,  footer {
+    margin: 10px 10px 0;
     width: calc(100vw - 20px);
   }
 
@@ -236,7 +237,7 @@ footer {
 }
 
 @media (max-width: 374px) {
-  h1 {
+  h2 {
     &.desktop {
       display: none;
     }

@@ -32,32 +32,31 @@
         <div class="bar two"></div>
       </div>
       <a href="/" class="nameplate">
-        <h1>
+        <h2 class="desktop">
           Office of Owen Dodd</br>
           Copenhagen & New York
-        </h1>
+        </h2>
+        <h2 class="mobile">
+          Owen Dodd</br>
+          CPH, NYC
+        </h2>
       </a>
       <a class="menu-item info" href="/">
-        <h1>Information</h1>
+        <h2>Information</h2>
       </a>
       <a class="menu-item info" href="/product-design">
-        <h1>Product Design</h1>
+        <h2>Product Design</h2>
       </a>
-      <!-- <a class="menu-item info" href="">
-                <h1>Photography</h1>
-            </a>
-            <a class="menu-item info" href="">
-                <h1>Other Projects</h1>
-            </a> -->
     </div>
   </header>
 
   <div class="content">
-    <section class="intro">
-      <div class="img-wrapper header">
-        <img src="./assets/palette header.png" alt="Palette" />
-      </div>
-      <h3>Palette Design System</h3>
+    <section>
+      <h1>Palette Design System</h1>
+      <img src="./assets/palette header.png" alt="Palette" />
+    </section>
+
+    <section>
       <p>
         Over the past 3 years, the Artsy design team has taken various attempts at developing a cohesive design system
         to
@@ -69,10 +68,7 @@
       <p> Working without dedicated design systems resources, we knew we must focus on creating a system that could be
         developed in a distributed manner and whose work could be
         incorporated into existing product team roadmaps as much as possible. </p>
-    </section>
-
-    <section class="intro">
-      <h3>Systems audit</h3>
+      <h2>Systems audit</h2>
       <p>Assessing our existing implementation of common UI and UX patterns revealed a high level of inconsistency in
         both
         the design treatment and technical implementation of functionally similar components.</p>
@@ -86,10 +82,7 @@
       <div class="img-wrapper">
         <img src="./assets/palette storybooks audit.png" alt="Palette" />
       </div>
-    </section>
-
-    <section class="intro">
-      <h3>Designing process</h3>
+      <h2>Designing process</h2>
       <p>With the goal of creating a system that was easily consumable by both design and
         engineering teams, we focused our attention first on articulating a lightweight and easily replicable process
         for any
@@ -104,10 +97,7 @@
       <div class="img-wrapper">
         <img src="./assets/palette component process.png" alt="Palette" />
       </div>
-    </section>
-
-    <section class="intro">
-      <h3>System heirarchy</h3>
+      <h2>System heirarchy</h2>
       <p>The most fundamental problem for our task force to address was defining what should and should not be included
         in the design system. Creating a hierarchical vocabulary allowed us to assess all potential additions to the
         Palette code base based on their specificity of application and their scalability across our product
@@ -116,11 +106,7 @@
       <div class="img-wrapper">
         <img src="./assets/palette heirarchy.png" alt="Palette" />
       </div>
-
-    </section>
-
-    <section class="intro">
-      <h3>Components: typography</h3>
+      <h2>Components: typography</h2>
       <p>After an initial round of standardization of our type sizes, we further refined our type system by creating an
         additional layer of typographic variables. The semantic naming of these variables created more clarity in how
         they should be applied. Additionally, responsive logic was built into each variable, allowing us to more easily
@@ -136,43 +122,53 @@
         </div>
       </div>
     </section>
-    <section class="intro">
-      <h3>Components: quick inputs</h3>
+    <section>
+      <h2>Components: quick inputs</h2>
       <p>Our quick edit inputs were created to capture information as seamlessly as possible, and are prominently used
         in our log in and sign up flow.</p>
       <div class="img-wrapper">
         <img src="./assets/palette quick input.png" alt="Palette" />
       </div>
-    </section>
-    <section class="intro">
-      <h3>Components: modals</h3>
+      <h2>Components: modals</h2>
       <p>Modals are used across our platform for quick actions and to surface important contextual information. The new
         modal component in Palette was created with two size variations, and with a number of standardized treatment
         options for CTAs, forms, titles and other commonly used UI.</p>
       <div class="img-wrapper">
         <img src="./assets/palette modal.png" alt="Palette" />
       </div>
-    </section>
-    <section class="intro">
-      <h3>Components: data visualization</h3>
+      <h2>Components: data visualization</h2>
       <p>The line chart and donut chart components were built on top of our existing bar chart data visualization
         component to support a wider range of data types. These components are used both on the front end of the site,
         and in our partner CMS to show analytics and market data.</p>
       <div class="img-wrapper">
         <img src="./assets/palette data visualization.png" alt="Palette" />
       </div>
-    </section>
-
-    <section class="intro">
-      <h3>Moving forward</h3>
+      <h2>Moving forward</h2>
       <p>As our design system is increasingly adopted across in more parts of the product, we are continuing to develop
         and consolidate our documentation, and useage guidelines, with the goal of making this work as easily accessible
         as possible across the team. This work will continue to evolve and be refined as we increase usage and find the
         boundaries of our current systems.</p>
     </section>
+  </div>
+
+  <footer>
+    <div class="link-menu">
+      <a class="link-item" href="mailto:mail@owendodd.com">
+        <h2>mail@owendodd.com</h2>
+      </a>
+      <a class="link-item" href="https://www.instagram.com/owendodd/">
+        <h2>instagram.com/owendodd</h2>
+      </a>
+      <a class="link-item" href="https://www.are.na/owen-dodd/">
+        <h2>are.na/owen-dodd</h2>
+      </a>
+      <a class="link-item" href="https://www.linkedin.com/in/ododd/">
+        <h2>linkedin.com/in/ododd</h2>
+      </a>
+    </div>
+  </footer>
 
 
 
-
-    <script type="text/javascript" src="/assets/js/script.js"></script>
+  <script type="text/javascript" src="/assets/js/script.js"></script>
 </body>
