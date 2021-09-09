@@ -37,9 +37,9 @@ h1, h2 {
 }
 
 a {
-  color: blue;
+  color: rgb(64, 60, 0);
   &:hover {
-    color: #38dcff;
+    color: rgba(64, 60, 0, 0.7);
   }
 }
 
@@ -53,7 +53,6 @@ a {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 50vw;
-  background: rgb(255,236,85);
-  background: linear-gradient(90deg, rgba(56, 255, 139, 0.1) 0%, rgba(56, 255, 139, 0) 100%);
+  width: 100vw;
+  background: center / cover no-repeat url(/assets/bg.jpeg);
 }

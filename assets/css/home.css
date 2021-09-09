@@ -28,11 +28,11 @@ h1, h2 {
 }
 
 a {
-  color: blue;
+  color: #403c00;
 }
 
 a:hover {
-  color: #38dcff;
+  color: rgba(64, 60, 0, 0.7);
 }
 
 .links {
@@ -45,9 +45,7 @@ a:hover {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 50vw;
-  background: #ffec55;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(56, 255, 139, 0.1)), to(rgba(56, 255, 139, 0)));
-  background: linear-gradient(90deg, rgba(56, 255, 139, 0.1) 0%, rgba(56, 255, 139, 0) 100%);
+  width: 100vw;
+  background: center/cover no-repeat url(/assets/bg.jpeg);
 }
 /*# sourceMappingURL=home.css.map */
