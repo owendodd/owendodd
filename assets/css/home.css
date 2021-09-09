@@ -1,23 +1,14 @@
-@mixin p($property, $val) {
-  -webkit-#{$property}: $val;
-  -moz-#{$property}: $val;
-  -ms-#{$property}: $val;
-  #{$property}: $val;
+@font-face {
+  font-family: "SocialLight";
+  src: url("./webfonts/ABCSocial-Light.woff2") format("woff2"), url("./webfonts/ABCSocial-Light.woff") format("woff");
 }
 
-@import "webfonts";
-$font-body: 22px;
-$font-head: 22px;
-$font-subhead: 16px;
-
-
-// General
 body {
   color: #403C00;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   margin: 20px 60px;
-  font-size: $font-body;
+  font-size: 22px;
   line-height: 1.6em;
   padding: 0;
   letter-spacing: 0.02em;
@@ -30,7 +21,7 @@ p {
 }
 
 h1, h2 {
-  font-size: $font-head;
+  font-size: 22px;
   font-weight: normal;
   line-height: 1.4em;
   margin: 0;
@@ -38,9 +29,10 @@ h1, h2 {
 
 a {
   color: blue;
-  &:hover {
-    color: #38dcff;
-  }
+}
+
+a:hover {
+  color: #38dcff;
 }
 
 .links {
@@ -54,6 +46,8 @@ a {
   left: 0;
   height: 100vh;
   width: 50vw;
-  background: rgb(255,236,85);
+  background: #ffec55;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(56, 255, 139, 0.1)), to(rgba(56, 255, 139, 0)));
   background: linear-gradient(90deg, rgba(56, 255, 139, 0.1) 0%, rgba(56, 255, 139, 0) 100%);
 }
+/*# sourceMappingURL=home.css.map */
