@@ -6,8 +6,8 @@
 }
 
 @import "webfonts";
-$font-body: 24px;
-$font-head: 24px;
+$font-body: 22px;
+$font-head: 22px;
 $font-subhead: 16px;
 
 
@@ -26,12 +26,12 @@ body {
 }
 
 p {
-  margin: 0;
+  margin: 0 60px;
 }
 
 h1, h2 {
   font-size: $font-head;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
   line-height: 1.4em;
   margin: 0;
@@ -48,16 +48,16 @@ a {
   margin-top: 30px;
 }
 
+
 footer {
   margin: 30px 60px;
   position: absolute;
   display: flex;
-  justify-content: center;
   bottom: 0;
   left: 0;
   right: 0;
   h1 {
-    margin: 0 20px;
+    margin: 0 40px 0 0;
   }
 }
 
@@ -68,5 +68,5 @@ footer {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: center / cover no-repeat url(/assets/bg.jpg);
+  background: center / cover no-repeat url(/assets/bg.jpeg);
 }
