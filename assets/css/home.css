@@ -54,12 +54,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
-  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .button-group a {
-  margin-right: 20px;
+  margin: 0 20px 10px 0;
   font-size: 18px;
   padding: 2px 8px 2px;
   background: rgba(92, 167, 255, 0.2);
@@ -92,6 +93,10 @@ header {
           justify-content: space-between;
 }
 
+header .menu {
+  margin-bottom: 5px;
+}
+
 header .menu a {
   font-size: 18px;
   padding: 19px 30px 18px;
@@ -113,13 +118,14 @@ footer .link-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .link-group a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
   font-size: 18px;
   padding: 2px 8px 2px;
   border: 1px solid rgba(64, 60, 0, 0);
@@ -144,5 +150,22 @@ footer .link-group a:hover {
   height: 100vh;
   width: 100vw;
   background: center/cover no-repeat url(/assets/bg.jpeg);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .button-group a, footer .link-group a {
+    font-size: 16px;
+  }
+  header .menu a {
+    font-size: 16px;
+    padding: 15px 20px 15px;
+  }
 }
 /*# sourceMappingURL=home.css.map */
