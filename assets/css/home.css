@@ -4,7 +4,7 @@
 }
 
 body {
-  color: #403c00;
+  color: #4b3d00;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +32,7 @@ h1 {
 }
 
 a {
-  color: #403c00;
+  color: #4b3d00;
 }
 
 .container {
@@ -63,7 +63,7 @@ a {
   margin: 0 20px 10px 0;
   font-size: 18px;
   padding: 2px 8px 2px;
-  background: rgba(92, 167, 255, 0.2);
+  background: rgba(146, 146, 146, 0.2);
   border: 1px solid rgba(64, 60, 0, 0.2);
   text-decoration: none;
   backdrop-filter: blur(3px);
@@ -100,7 +100,7 @@ header .menu {
 header .menu a {
   font-size: 18px;
   padding: 19px 30px 18px;
-  background: rgba(92, 167, 255, 0.2);
+  background: rgba(146, 146, 146, 0.2);
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(30px);
@@ -149,7 +149,7 @@ footer .link-group a:hover {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: center/cover no-repeat url(/assets/bg.jpeg);
+  background: center/cover no-repeat url(/assets/9L9A9082.jpeg);
 }
 
 @media screen and (max-width: 800px) {
