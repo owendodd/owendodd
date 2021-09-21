@@ -125,6 +125,19 @@ footer {
   width: 100vw;
   background: center / cover no-repeat url(/assets/9L9A9082.jpeg);
 }
+video {
+  object-fit: cover;
+  position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -100;
+  .bgVid {
+    
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   $font-body: 18px; 
