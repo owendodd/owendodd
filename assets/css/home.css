@@ -5,6 +5,7 @@
 
 body {
   color: #f2f5ff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   background-color: #7790B0;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
@@ -26,6 +27,7 @@ p {
 
 h1 {
   font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   text-align: left;
   font-weight: normal;
   line-height: 1.4em;
