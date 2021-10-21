@@ -12,7 +12,8 @@ $font-subhead: 18px;
 
 // General
 body {
-  color: #4b3d00;
+  color: #f2f5ff;
+  background-color: #7790B0;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +44,7 @@ span.cities {
 }
 
 a {
-  color: #4b3d00;
+  color: #f2f5ff;
 }
 
 .container {
@@ -62,8 +63,8 @@ a {
     margin: 0 20px 10px 0;
     font-size: $font-subhead;
     padding: 2px 8px 2px;
-    background: rgba(146, 146, 146, 0.2);
-    border: 1px solid rgba(64, 60, 0, 0.2);
+    background: rgba(112, 113, 119, 0.2);
+    border: 1px solid rgba(0, 26, 144, 0.2);
     text-decoration: none;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -105,7 +106,8 @@ footer {
       margin: 0 10px 10px 0;
       font-size: $font-subhead;
       padding: 2px 8px 2px;
-      border: 1px solid rgba(64, 60, 0, 0);
+      // background: rgba(112, 113, 119, 0.2);
+      border: 1px solid rgba(0, 26, 144, 0.0);
       text-decoration: none;
       border-radius: 9px;
       transition: ease-in-out all 200ms;
@@ -113,7 +115,7 @@ footer {
         background: rgba(155, 155, 155, 0.2);
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
-        border: 1px solid rgba(64, 60, 0, 0.2);
+        border: 1px solid rgba(0, 26, 144, 0.2)
       }
     }
   }
@@ -129,8 +131,9 @@ footer {
   background: center / cover no-repeat url(/assets/9L9A9082.jpeg);
 }
 video {
+  background-color: #7790B0;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
     top: 0;
     left: 0;
     right: 0;
